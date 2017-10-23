@@ -1,34 +1,0 @@
-Timothy P. McMackin
-919-280-4541
-timothymcmackin@gmail.com
-
-**Summary**
-I simplify complicated software suites by providing thorough, useful information that guides customers through their tasks.
-I lead teams that provide complete and continuously delivered information services for software products, guiding them to stay coordinated and to cover all aspects of the products.
-I get my hands dirty with technology by implementing informational enhancements to our products and by working closely with customers, development, design, sales, and support teams.
-
-**Experience**
-
-IBM, Durham, NC 2004-Present
-Advisory Technical Writer/Team Lead: 2012-Present
-Staff Technical Writer/Team Lead: 2007-2012
-Technical Writer: 2004-2007
-
-– Leading a seven-person team providing documentation for IBM UrbanCode software, a suite of enterprise-level continuous delivery, application release automation, and automated cloud provisioning tools, with mobile, cloud-hosted, mainframe, and on-prem components.
-– Providing complete information services for UrbanCode products, including documentation, education, videos, white papers, customer forum response, and support response. Covering a wide range of realistic customer DevOps scenarios, such as blue-green deployments, rolling deployments, dark launches, continuous delivery, and mainframe deployments.
-– Providing documentation for services on IBM's Bluemix platform, including cognitive, DevOps, continuous monitoring, and integrated toolchain services.
-– Adapted documentation processes from waterfall delivery on on-prem software to continuous delivery on hosted and mobile systems; migrated documentation to GitHub and Jenkins.
-– Working closely with the 70-person development team to provide technically detailed documentation on a continuous-delivery DevOps production lifecycle.
-– Contributing to products at a technical level, writing code samples, coding progressive disclosure information, installing Jenkins pipelines, and implementing enhancements to product information in Java, JavaScript, and Python.
-– Coding systems that provide complete technical information by merging automatically generated API documentation with written explanations and examples using Java and XSLT.
-– Researching and writing custom documents for our largest customers and for critical needs, including videos and topology models that are tailored to customers' specific situations. Contributed directly to sales deals in the millions of dollars.
-– Working with support teams to identify customer needs and to focus efforts on preventing support calls. Reduced average time to documentation error resolution from 8 days to 2 days.
-
-Lohre & Associates Advertising, Cincinnati, OH
-Copywriter: 2000-2003
-– Wrote magazine articles, press releases, and client-to-customer print and email communication.
-– Prepared reports for research, media planning, competitive analysis, and web traffic tracking.
-
-**Education**
-Carnegie Mellon University, Pittsburgh, PA: M.A. Professional Writing
-Xavier University, Cincinnati, OH: BA English rhetoric and literature
