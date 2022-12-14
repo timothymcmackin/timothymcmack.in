@@ -22,17 +22,19 @@ Result goes here.
 
 <li>
 <div class="experienceActionBullet">
-Developed documentation for Shutterstock's public API, SDK, CLI, and UI widgets, using a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
+Developed documentation for Shutterstock's public API, SDK, CLI, and UI widgets by creating a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
 For more information and links, see my <a href="./portfolio">portfolio</a> page.
 </div>
 <div class="experienceResultBullet">
-Reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicated that documentation was a major factor in getting integrations working quickly.
+Reduced average partner integration time from 3 months to 1.2 months.
+Partner feedback indicated that documentation was a major factor in getting integrations working quickly.
 </div>
 </li>
 
 <li>
 <div class="experienceActionBullet">
-Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions. Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, asynchronous JavaScript, and other open-source tools.
+Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions.
+Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, asynchronous JavaScript, and other open-source tools.
 </div>
 <div class="experienceResultBullet">
 Onboarded documentation for 5 internal services in 2 months and eventually 13 services.
@@ -49,7 +51,8 @@ Departments across the company use this diagram to diagnose outages and other ur
 
 <li>
 <div class="experienceActionBullet">
-Documenting internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding. Hosting writing classes and working sessions to guide teams to make documenting their work part of their processes.
+Documenting internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
+Hosted writing classes and working sessions to guide teams to make documenting their work part of their processes.
 </div>
 <div class="experienceResultBullet">
 Result goes here.
@@ -70,7 +73,8 @@ Result goes here.
 </div>
 </li>
 <li>
-<div class="experienceActionBullet">Provided complete information services for UrbanCode products, including documentation, education, videos, white papers, customer forum response, and support response. Covered a wide range of realistic customer DevOps scenarios, such as blue-green deployments, rolling deployments, dark launches, continuous delivery, and mainframe deployments.
+<div class="experienceActionBullet">Provided complete information services for UrbanCode products, including documentation, education, videos, white papers, customer forum response, and support response.
+Covered a wide range of realistic customer DevOps scenarios, such as blue-green deployments, rolling deployments, dark launches, continuous delivery, and mainframe deployments.
 </div>
 <div class="experienceActionBullet">
 For examples, see my <a href="./portfolio">portfolio</a> page.
@@ -93,11 +97,13 @@ For examples, see my <a href="./portfolio">portfolio</a> page.
 </div>
 </li>
 <li>
-<div class="experienceActionBullet">Researched and wrote custom documents for our largest customers and for critical needs, including videos and topology models that are tailored to customers' specific situations. Contributed directly to sales deals in the millions of dollars.
+<div class="experienceActionBullet">Researched and wrote custom documents for our largest customers and for critical needs, including videos and topology models that are tailored to customers' specific situations.
+Contributed directly to sales deals in the millions of dollars.
 </div>
 </li>
 <li>
-<div class="experienceActionBullet">Worked with support teams to identify customer needs and to focus efforts on preventing support calls. Reduced average time to documentation error resolution from 8 days to 2 days.
+<div class="experienceActionBullet">Worked with support teams to identify customer needs and to focus efforts on preventing support calls.
+Reduced average time to documentation error resolution from 8 days to 2 days.
 </div>
 </li>
 </ul>
