@@ -42,3 +42,13 @@
 /* Tim's custom */
 @import "resume";
 @import "portfolio";
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+section.page__content {
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
+}
