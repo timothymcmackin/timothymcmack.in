@@ -1,0 +1,44 @@
+.company {
+  font-weight: bold;
+}
+
+.roles li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+.experience {
+  list-style-type: disc; // No worky
+}
+
+.experience li {
+  // Mobile-first
+  // Styles for larger breakpoints override
+  list-style-type: disc;
+  display: list-item;
+  flex-direction: column;
+  color: purple;
+  width: 80%;
+
+  @include breakpoint($medium) {
+    color: blue;
+    // flex-direction: row;
+  }
+
+  @include breakpoint($large) { // will convert to a max-width:1024px media query
+    // 1024px wide and up styles here
+    // column width 33.3333%
+    // flex-direction: row;
+    color: green;
+  }
+
+}
+
+.experience > li > div {
+  padding: 10px;
+}
