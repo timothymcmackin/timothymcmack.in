@@ -54,6 +54,9 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+atom_feed:
+  hide: true
+
 author:
   name   : "Tim McMackin"
   avatar : "/assets/images/bio-photo.jpg"
