@@ -23,6 +23,7 @@ Result goes here.
 <li>
 <div class="experienceActionBullet">
 Developed documentation for Shutterstock's public API, SDK, CLI, and UI widgets, using a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
+For more information and links, see my <a href="./portfolio">portfolio</a> page.
 </div>
 <div class="experienceResultBullet">
 Reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicated that documentation was a major factor in getting integrations working quickly.
@@ -70,6 +71,9 @@ Result goes here.
 </li>
 <li>
 <div class="experienceActionBullet">Provided complete information services for UrbanCode products, including documentation, education, videos, white papers, customer forum response, and support response. Covered a wide range of realistic customer DevOps scenarios, such as blue-green deployments, rolling deployments, dark launches, continuous delivery, and mainframe deployments.
+</div>
+<div class="experienceActionBullet">
+For examples, see my <a href="./portfolio">portfolio</a> page.
 </div>
 </li>
 <li>
