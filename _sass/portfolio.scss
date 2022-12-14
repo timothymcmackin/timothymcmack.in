@@ -1,0 +1,19 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolio > div {
+  width: 300px;
+  margin: 30px;
+}
+
+.portfolio a {
+  font-weight: bold;
+}
+
+.portfolio p {
+  margin-top: 20px;
+}
