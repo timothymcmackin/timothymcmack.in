@@ -19,22 +19,36 @@ Drove a culture of information sharing and introduced technical documentation pr
 
 <li>
 <div class="experienceActionBullet">
-Developed documentation for Shutterstock's public API, SDK, CLI, and UI widgets by creating a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
+Developed and wrote <a href="https://api-reference.shutterstock.com/" target="_blank">documentation for Shutterstock's public API</a>, including its SDK, CLI, and UI widgets:
+
+<ul>
+<li>
+Wrote task-based information about using the API, including how to <a href="https://api-reference.shutterstock.com/#authentication" target="_blank">authenticate</a>, <a href="https://api-reference.shutterstock.com/#searching-for-media" target="_blank">search for media</a>, <a href="https://api-reference.shutterstock.com/#licensing-and-downloading" target="_blank">license and dowload media</a>, and <a href="https://api-reference.shutterstock.com/#searching-for-media-computer-vision-search" target="_blank">use Shutterstock's AI tools</a>.
+</li>
+<li>
+Developed a Node.JS app to generate <a href="https://api-reference.shutterstock.com/" target="_blank">these tech docs</a> from the API's OpenAPI spec and merge generated and handwritten code examples in four languages.
+</li>
+<li>
+Maintained Shutterstock's <a href="https://www.shutterstock.com/developers/documentation" target="_blank">developer portal</a> with information about the API and related tools for partners such as the company's single sign-on/federated identity offering.
+</li>
+</ul>
+
 For more information and links, see my <a href="./portfolio">portfolio</a> page.
 </div>
 <div class="experienceResultBullet">
-Reduced average partner integration time from 3 months to 1.2 months.
-Partner feedback indicated that documentation was a major factor in getting integrations working quickly.
+These docs reduced average partner integration time from 3 months to 1.2 months.
+Partner feedback indicates that documentation is a major factor in getting integrations working quickly.
 </div>
 </li>
 
 <li>
 <div class="experienceActionBullet">
 Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions.
-Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, asynchronous JavaScript, and other open-source tools.
+Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, GitHub Actions, asynchronous JavaScript, and other open-source tools.
 </div>
 <div class="experienceResultBullet">
-Onboarded documentation for 5 internal services in 2 months and eventually 13 services.
+I onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services.
+Overall, this container reduced the time that teams had to spend on tech docs because I could manage one platform instead of letting them manage 13.
 </div>
 </li>
 
@@ -43,13 +57,17 @@ Onboarded documentation for 5 internal services in 2 months and eventually 13 se
 Built a diagram of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
 </div>
 <div class="experienceResultBullet">
-Departments across the company use this diagram to diagnose outages and other urgent situations.</div>
+Departments across the company use this diagram to diagnose outages and other urgent situations.
+</div>
 </li>
 
 <li>
 <div class="experienceActionBullet">
-Documenting internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
+Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
 Hosted writing classes and working sessions to guide teams to make documenting their work part of their processes.
+</div>
+<div class="experienceResultBullet">
+These tech docs reduced confusion when development teams worked across departments, reduced the amount of time experienced developers had to answer questions, and sped up the onboarding of new developers.
 </div>
 </li>
 </ul>

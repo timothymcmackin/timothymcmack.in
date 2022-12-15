@@ -4,6 +4,8 @@ layout: portfolio
 permalink: /portfolio/
 ---
 
+Here are some examples of my work in software documentation and technical writing:
+
 <div class="portfolio">
 
 <div>
@@ -47,7 +49,10 @@ I planned, wrote, and typeset this white paper based on testing data from our pr
 <div>
 <a href="https://www.youtube.com/watch?v=AG_7ulQMZ0M">Rollback scenarios in IBM UrbanCode Deploy</a>
 <p>
-This video addresses customer confusion that I learned about from support requests. It demonstrates techniques for reversing problems automatically, and it teaches customers about a common misconception about the product at the same time. Our internal support call analysis showed significantly fewer customer issues in this area after I delivered and promoted the video.
+This video addresses customer confusion that I learned about from support requests. It demonstrates techniques for reversing problems automatically, and it teaches customers about a common misconception about the product at the same time.
+</p>
+<p>
+Our internal support call analysis showed significantly fewer customer issues in this area after I delivered and promoted the video.
 </p>
 </div>
 

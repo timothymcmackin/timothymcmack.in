@@ -15,9 +15,10 @@ Here's my [resume](./resume), and you can look me up on LinkedIn: [@timothymcmac
   - Documentation and coding to combine generated API/SDK reference with handwritten information and examples
   - Leadership for teams of technical writers
 
-  I've got examples in my [portfolio](./portfolio).
+  I've got examples of my work in my [portfolio](./portfolio).
 
 - I like kite flying and kite-surfing.
 My [YouTube](https://www.youtube.com/@timothymcmackin/videos) account has my kite videos and [this site](https://timothymcmackin.github.io/kite-site/) has my kite collection.
 
-- I don't use social media all that much, but when I do, I use Twitter, where I'm [@timothymcmackin](https://twitter.com/timothymcmackin).
+- I used to use Twitter as [@timothymcmackin](https://twitter.com/timothymcmackin) as my primary social media, but haven't been on Twitter lately.
+The best way to get in touch with me is by email or LinkedIn.
