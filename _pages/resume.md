@@ -4,6 +4,8 @@ layout: resume
 permalink: /resume/
 ---
 
+Click here for a PDF version: [TimothyMcMackin.pdf](/assets/TimothyMcMackin.pdf)
+
 <div class="company">Shutterstock (remote): 2017-2022</div>
 <ul class="roles">
 <li>Information Engineer IV: 2022</li>
