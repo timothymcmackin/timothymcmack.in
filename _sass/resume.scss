@@ -3,7 +3,6 @@ section.page__content {
     width: 1000px;
     padding-left: 100px;
   }
-
 }
 
 .company {
@@ -30,17 +29,11 @@ section.page__content {
   list-style-type: disc;
   display: list-item;
   flex-direction: column;
-  color: purple;
   width: 80%;
-
-  @include breakpoint($medium) {
-    color: blue;
-  }
 
   @include breakpoint($large) { // will convert to a max-width:1024px media query
     // 1024px wide and up styles here
     flex-direction: row;
-    color: green;
   }
 
 }

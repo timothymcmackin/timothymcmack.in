@@ -16,17 +16,9 @@
 
 .portfolio p {
   margin-top: 20px;
-  color: purple;
-
-  @include breakpoint($medium) {
-    color: blue;
-    // flex-direction: row;
-  }
 
   @include breakpoint($large) { // will convert to a max-width:1024px media query
     // 1024px wide and up styles here
-    // flex-direction: row;
-    color: green;
     font-size: small;
   }
 }

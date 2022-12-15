@@ -15,9 +15,6 @@ permalink: /resume/
 <div class="experienceActionBullet">
 Drove a culture of information sharing and introduced technical documentation processes as Shutterstock's first technical writer.
 </div>
-<div class="experienceResultBullet">
-Result goes here.
-</div>
 </li>
 
 <li>
@@ -53,9 +50,6 @@ Departments across the company use this diagram to diagnose outages and other ur
 <div class="experienceActionBullet">
 Documenting internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
 Hosted writing classes and working sessions to guide teams to make documenting their work part of their processes.
-</div>
-<div class="experienceResultBullet">
-Result goes here.
 </div>
 </li>
 </ul>
