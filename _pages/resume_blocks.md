@@ -12,7 +12,55 @@ Click here for a PDF version: [TimothyMcMackin.pdf](/assets/TimothyMcMackin.pdf)
 <li>Senior Information Engineer: 2017-2022</li>
 </ul>
 
-<div class="header-grid">
+<div class="experience-list">
+
+<ul>
+
+<li>
+Drove a culture of information sharing and introduced technical documentation processes as Shutterstock's first technical writer.
+</li>
+
+<li>
+<div class="exp-title">API reference</div>
+Developed and wrote <a href="https://api-reference.shutterstock.com/" target="_blank">documentation for Shutterstock's public API</a>, SDK, CLI, and UI widgets by creating a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
+
+<div class="result-title">Result</div>
+These docs reduced average partner integration time from 3 months to 1.2 months.
+Partner feedback indicates that documentation is a major factor in getting integrations working quickly.
+</li>
+
+<li>
+<div class="exp-title">Documentation pipeline</div>
+Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions.
+Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, GitHub Actions, asynchronous JavaScript, and other open-source tools.
+
+<div class="result-title">Result</div>
+I onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services.
+Overall, this container reduced the time that teams had to spend on tech docs because I could manage one platform instead of making them manage 13.
+</li>
+
+<li>
+<div class="exp-title">Architecture diagram</div>
+Built a diagram of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
+
+<div class="result-title">Result</div>
+Departments across the company use this diagram to diagnose outages and other urgent situations.
+</li>
+
+<li>
+<div class="exp-title">Microservice documentation</div>
+Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
+Hosted writing classes and working sessions to guide teams to make documenting their work part of their processes.
+
+<div class="result-title">Result</div>
+These tech docs reduced confusion when development teams worked across departments, reduced the amount of time experienced developers had to answer questions, and sped up the onboarding of new developers.
+</li>
+
+</ul>
+
+</div>
+
+<div class="experience-grid">
 
 <div id="s1" class="block experience">
 Drove a culture of information sharing and introduced technical documentation processes as Shutterstock's first technical writer.
@@ -45,13 +93,13 @@ Overall, this container reduced the time that teams had to spend on tech docs be
 </div>
 
 <div id="s7" class="block experience">
-<div class="exp-title">Architecture diagram</div>
-Built a diagram of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
+<div class="exp-title">Architecture diagrams</div>
+Built diagrams of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
 </div>
 
 <div id="s8" class="block result">
 <div class="result-title">Result</div>
-Departments across the company use this diagram to diagnose outages and other urgent situations.
+Departments across the company use these diagrams to diagnose outages and other urgent situations.
 </div>
 
 <div id="s9" class="block experience">

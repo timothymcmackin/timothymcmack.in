@@ -1,9 +1,11 @@
-.header-grid {
+.experience-grid {
 
-  @include breakpoint($large) {
+  display: none;
+
+  @include breakpoint($medium) {
     width: 100%;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1.2fr 1fr 1fr;
+    // grid-template-rows: 0.5fr 1fr 1.2fr 1fr 1fr;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
     "exp-a exp-a exp-a res-a res-a"
@@ -15,18 +17,43 @@
 
 }
 
+.experience-grid > div {
+  margin-bottom: 40px;
+}
+
+.experience-list {
+
+  display: block;
+
+  @include breakpoint($medium) {
+    display: none;
+  }
+
+}
+
 .block {
   display: list-item;
-  @include breakpoint($large) {
+  @include breakpoint($medium) {
     display: block;
     height: 100%;
     width: 100%;
   }
 }
 
-.header-grid .exp-title, .header-grid .result-title {
+.exp-title {
   font-size: smaller;
   font-weight: bold;
+}
+
+.result-title {
+  font-size: smaller;
+  font-weight: bold;
+  margin-top: 8px;
+
+  @include breakpoint($medium) {
+    margin-top: 0px;
+  }
+
 }
 
 #s1 { grid-area: exp-a; }
