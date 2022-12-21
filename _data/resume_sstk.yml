@@ -17,7 +17,7 @@ entries:
 
 - title: Technical documentation
   experience: Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
-  result: Teams used this documentation to reduce the amount of time they spent answering consumers' questions, to onboard new developers, and to communicate about how their systems worked.
+  result: Teams used this documentation to reduce the amount of time they spent answering consumers' questions, to onboard new developers, and to communicate how to use their systems.
 
 # - title: Architecture diagrams
 #   experience: Built diagrams of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
