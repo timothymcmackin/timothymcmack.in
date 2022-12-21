@@ -25,6 +25,73 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+        <div class="company">{{ site.data.resume_sstk.title }}</div>
+        <ul class="roles">
+          {% for oneRole in site.data.resume_sstk.roles %}
+          <li>{{ oneRole }}</li>
+          {% endfor %}
+        </ul>
+
+        {% comment %} Shutterstock {% endcomment %}
+        <div class="experience-grid-fromdata">
+          {% for oneExp in site.data.resume_sstk.entries %}
+            <div class="experience">
+              {% if oneExp.title %}
+                <div class="exp-title">{{ oneExp.title }}</div>
+              {% endif %}
+              {{ oneExp.experience }}
+            </div>
+            <div class="result">
+              {% if oneExp.result %}
+                <div class="spacer-result">&nbsp;</div>
+                <div class="result-title">Result</div>
+                {{ oneExp.result }}
+              {% endif %}
+            </div>
+            <div class="spacer-row">&nbsp;</div>
+          {% endfor %}
+        </div>
+
+        {% comment %} IBM {% endcomment %}
+        <div class="company">{{ site.data.resume_ibm.title }}</div>
+        <ul class="roles">
+          {% for oneRole in site.data.resume_ibm.roles %}
+          <li>{{ oneRole }}</li>
+          {% endfor %}
+        </ul>
+        <div class="resume-list">
+          <ul>
+            {% for oneExp in site.data.resume_ibm.entries %}
+              <li>{{ oneExp }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% comment %} Lohre {% endcomment %}
+        <div class="company">{{ site.data.resume_lohre.title }}</div>
+        <ul class="roles">
+          {% for oneRole in site.data.resume_lohre.roles %}
+          <li>{{ oneRole }}</li>
+          {% endfor %}
+        </ul>
+        <div class="resume-list">
+          <ul>
+            {% for oneExp in site.data.resume_lohre.entries %}
+              <li>{{ oneExp }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% comment %} Education {% endcomment %}
+        <div class="company">{{ site.data.resume_education.title }}</div>
+        <div class="resume-list">
+          <ul>
+            {% for oneExp in site.data.resume_education.entries %}
+              <li>{{ oneExp }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
       </section>
     </div>
   </article>

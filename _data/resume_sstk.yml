@@ -1,0 +1,24 @@
+title: 'Shutterstock (remote): 2017-2022'
+roles:
+- 'Information Engineer IV: 2022'
+- 'Senior Information Engineer: 2017-2022'
+entries:
+- title: Technical documentation leadership
+  experience: Drove a culture of information sharing and introduced technical documentation processes as Shutterstock's first technical writer. Hosted writing classes and working sessions to educate development teams about technical docs.
+  result: Development teams included documentation as part of their development processes. Teams started their own documentation workgroups and provided much of their own docs.
+
+- title: API reference
+  experience: Developed and wrote <a href="https://api-reference.shutterstock.com">documentation for Shutterstock's public API</a>, SDK, CLI, and UI widgets by creating a pipeline to merge OpenAPI reference with manually written examples and task-oriented content.
+  result: These docs reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicates that documentation is a major factor in getting integrations working quickly.
+
+- title: Documentation pipeline
+  experience: Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions. Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, GitHub Actions, asynchronous JavaScript, and other open-source tools.
+  result: I onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services. Overall, this container reduced the time that teams had to spend on tech docs because I could manage one platform instead of making them manage 13.
+
+- title: Technical documentation
+  experience: Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
+  result: Teams used this documentation to reduce the amount of time they spent answering consumers' questions, to onboard new developers, and to communicate about how their systems worked.
+
+- title: Architecture diagrams
+  experience: Built diagrams of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
+  result: Departments across the company use this diagram to diagnose outages and other urgent situations.

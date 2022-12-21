@@ -5,39 +5,46 @@ section.page__content {
   }
 }
 
+.experience-grid-fromdata {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include breakpoint($medium) {
+    flex-direction: row;
+  }
+}
+
+.experience-grid-fromdata > div {
+  flex-basis: 48%;
+  margin-right: 30px;
+}
+
+.experience-grid-fromdata > div.spacer-row {
+  flex-basis: 100%;
+  height: 20px;
+}
+
+.experience-grid-fromdata .result {
+  margin-left: 20px;
+  @include breakpoint($medium) {
+    margin: inherit;
+  }
+}
+
 .company {
   font-weight: bold;
 }
 
-.roles li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin: 0px;
+.exp-title {
+  font-size: smaller;
+  font-weight: bold;
 }
 
-.experience {
-  list-style-type: disc;
+.result-title {
+  font-size: smaller;
+  font-weight: bold;
 }
 
-.experience li {
-  // Mobile-first
-  // Styles for larger breakpoints override
-  list-style-type: disc;
-  display: list-item;
-  flex-direction: column;
-  width: 80%;
-
-  @include breakpoint($large) { // will convert to a max-width:1024px media query
-    // 1024px wide and up styles here
-    flex-direction: row;
-  }
-
-}
-
-.experience > li > div {
-  padding: 10px;
+.resume-list {
+  margin-bottom: 40px;
 }
