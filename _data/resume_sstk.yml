@@ -19,6 +19,6 @@ entries:
   experience: Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
   result: Teams used this documentation to reduce the amount of time they spent answering consumers' questions, to onboard new developers, and to communicate about how their systems worked.
 
-- title: Architecture diagrams
-  experience: Built diagrams of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
-  result: Departments across the company use this diagram to diagnose outages and other urgent situations.
+# - title: Architecture diagrams
+#   experience: Built diagrams of Shutterstock's internal architecture, gathering information from each department and merging it into a format that makes sense across all departments.
+#   result: Departments across the company use this diagram to diagnose outages and other urgent situations.
