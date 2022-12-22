@@ -14,9 +14,8 @@ section.page__content {
   }
 }
 
-.experience-grid-fromdata > div {
-  flex-basis: 48%;
-  margin-right: 30px;
+.experience, .result {
+  flex-basis: 44%;
 }
 
 .experience-grid-fromdata > div.spacer-row {
@@ -37,6 +36,29 @@ section.page__content {
 .exp-title {
   font-size: smaller;
   font-weight: bold;
+}
+
+.arrow {
+  // Seems to approximate the vertical center
+  top: 35%;
+}
+
+.arrow-spacer {
+  justify-content: center;
+  display: flex;
+}
+
+.arrow.small-breakpoints {
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+.arrow.large-breakpoints {
+  display: none;
+  @include breakpoint($medium) {
+    display: inline-block;
+  }
 }
 
 .spacer-result {
