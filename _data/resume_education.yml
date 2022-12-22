@@ -1,4 +1,8 @@
 title: Education
 entries:
-- 'Carnegie Mellon University, Pittsburgh, PA: M.A. Professional Writing'
-- 'Xavier University, Cincinnati, OH: BA English rhetoric and literature'
+  - school: Carnegie Mellon University
+    city: Pittsburgh, PA
+    degree: M.A. Professional Writing
+  - school: Xavier University
+    city: Cincinnati, OH
+    degree: BA English Rhetoric and Literature

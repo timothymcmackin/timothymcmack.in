@@ -85,8 +85,8 @@ layout: default
         <div class="company">{{ site.data.resume_education.title }}</div>
         <div class="resume-list">
           <ul>
-            {% for oneExp in site.data.resume_education.entries %}
-              <li>{{ oneExp }}</li>
+            {% for oneEdu in site.data.resume_education.entries %}
+              <li>{{ oneEdu.degree }}: {{ oneEdu.school }}, {{ oneEdu.city }}</li>
             {% endfor %}
           </ul>
         </div>
