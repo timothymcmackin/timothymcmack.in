@@ -25,7 +25,6 @@ section.page__content {
 }
 
 .experience-grid-fromdata .result {
-  margin-left: 20px;
   @include breakpoint($medium) {
     margin: inherit;
   }
