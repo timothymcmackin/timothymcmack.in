@@ -25,14 +25,14 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+
+        {% comment %} Shutterstock {% endcomment %}
         <div class="company">{{ site.data.resume_sstk.title }}</div>
         <ul class="roles">
           {% for oneRole in site.data.resume_sstk.roles %}
           <li>{{ oneRole }}</li>
           {% endfor %}
         </ul>
-
-        {% comment %} Shutterstock {% endcomment %}
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_sstk.entries %}
             <div class="experience">
@@ -62,12 +62,17 @@ layout: default
           <li>{{ oneRole }}</li>
           {% endfor %}
         </ul>
-        <div class="resume-list">
-          <ul>
-            {% for oneExp in site.data.resume_ibm.entries %}
-              <li>{{ oneExp }}</li>
-            {% endfor %}
-          </ul>
+        <div class="experience-grid-fromdata">
+          {% for oneExp in site.data.resume_ibm.entries %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <div class="experience no-result">
+              {{ oneExp }}
+            </div>
+            {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
+            {% if thecycle == 'odd' %}
+              <div class="no-arrow-spacer"></div>
+            {% endif %}
+          {% endfor %}
         </div>
 
         {% comment %} Lohre {% endcomment %}
@@ -77,12 +82,16 @@ layout: default
           <li>{{ oneRole }}</li>
           {% endfor %}
         </ul>
-        <div class="resume-list">
-          <ul>
-            {% for oneExp in site.data.resume_lohre.entries %}
-              <li>{{ oneExp }}</li>
-            {% endfor %}
-          </ul>
+        <div class="experience-grid-fromdata">
+          {% for oneExp in site.data.resume_lohre.entries %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <div class="experience no-result">
+              {{ oneExp }}
+            </div>
+            {% if thecycle == 'odd' %}
+              <div class="no-arrow-spacer"></div>
+            {% endif %}
+          {% endfor %}
         </div>
 
         {% comment %} Education {% endcomment %}
