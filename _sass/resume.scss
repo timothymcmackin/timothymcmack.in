@@ -48,3 +48,9 @@ section.page__content {
 .resume-list {
   margin-bottom: 40px;
 }
+
+.roles li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
