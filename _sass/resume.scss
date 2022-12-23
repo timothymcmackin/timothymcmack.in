@@ -45,6 +45,7 @@ section.page__content {
 .arrow {
   // Seems to approximate the vertical center
   top: 35%;
+  margin: 15px;
 }
 
 .arrow-spacer {
@@ -62,6 +63,7 @@ section.page__content {
   display: none;
   @include breakpoint($medium) {
     display: inline-block;
+    margin: 25px;
   }
 }
 
@@ -72,6 +74,10 @@ section.page__content {
 .spacer-result {
   font-size: smaller;
   font-weight: bold;
+  height: 0px;
+  @include breakpoint($medium) {
+    height: unset;
+  }
 }
 
 .resume-list {

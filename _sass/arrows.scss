@@ -89,7 +89,7 @@
 }
 
 .arrow {
-  margin: 25px;
+  // margin: 25px;
   @include arrow(12px, 2px, 2px, 20px);
   @include arrowColor(black);
 }
