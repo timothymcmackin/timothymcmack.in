@@ -7,7 +7,7 @@ Hi, I'm Tim.
 Here's some info about me:
 
 - I'm looking for my next job in software documentation.
-Here's my [resume](./resume), and you can look me up on LinkedIn: [@timothymcmackin](https://www.linkedin.com/in/timothymcmackin/).
+Here's my [resume](./resume) and my [portfolio](./portfolio), and you can look me up on LinkedIn: [@timothymcmackin](https://www.linkedin.com/in/timothymcmackin/).
 
   Here's what I do:
 
