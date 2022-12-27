@@ -26,6 +26,14 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        {% comment %} Summary {% endcomment %}
+        <div class="summary-heading">{{ site.data.resume_summary.title }}</div>
+        <ul class="summary-list">
+          {% for oneSum in site.data.resume_summary.entries %}
+            <li>{{ oneSum }}</li>
+          {% endfor %}
+        </ul>
+
         {% comment %} Shutterstock {% endcomment %}
         <div class="company">{{ site.data.resume_sstk.title }}</div>
         <ul class="roles">
