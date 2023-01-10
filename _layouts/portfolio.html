@@ -25,6 +25,24 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+        <div class="portfolio">
+          {% for entry in site.data.portfolio.entries %}
+          <div>
+            <a href="{{ entry.url }}" target="_blank">
+              <img src="{{ entry.image }}" alt=""/>
+              {{ entry.title }}
+            </a>
+            <p>
+              {{ entry.description }}
+            </p>
+            {% if entry.followup %}
+              <p>
+                {{ entry.followup }}
+              </p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
       </section>
     </div>
   </article>
