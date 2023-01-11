@@ -3,7 +3,7 @@ entries:
   url: https://api-reference.shutterstock.com/
   image: /assets/images/ai-search-crop.png
   description: >
-    I originally built this API reference documentation with Widdershins and Shins but later wrote a custom Node.JS and Nunjucks program to generate it.
+    I originally built this API reference documentation with Widdershins and Shins but later wrote a custom Node.JS and Nunjucks program to generate it with the help of the API development team.
     It merges handwritten examples and task-based information about using the API with generated examples and endpoint reference from an OpenAPI source file.
   followup: >
     By providing clear and thorough information for partners using the Shutterstock API, this reference information reduced the average partner integration time from 3 months to 1.2 months.
