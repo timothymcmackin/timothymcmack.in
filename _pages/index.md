@@ -20,5 +20,5 @@ Here's my [resume](./resume) and my [portfolio](./portfolio), and you can look m
 - I like kite flying and kite-surfing.
 My [YouTube](https://www.youtube.com/@timothymcmackin/videos) account has my kite videos and [this site](https://timothymcmackin.github.io/kite-site/) has my kite collection.
 
-- I used to use Twitter as [@timothymcmackin](https://twitter.com/timothymcmackin) as my primary social media, but haven't been on Twitter lately.
+- I used to use Twitter as [@timothymcmackin](https://twitter.com/timothymcmackin) as my primary social media, but I am moving to Mastodon, where I am [@timothymcmackin@mastodon.social](https://mastodon.social/@timothymcmackin).
 The best way to get in touch with me is by email or LinkedIn.
