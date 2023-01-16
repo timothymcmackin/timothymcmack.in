@@ -13,7 +13,7 @@ entries:
 
 - title: Documentation pipeline
   experience: Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions. Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, GitHub Actions, asynchronous JavaScript, and other open-source tools.
-  result: I onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services. Overall, this container reduced the time that teams had to spend on tech docs because I could manage one platform instead of making them manage 13.
+  result: Onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services. This container reduced the time that teams had to spend on tech docs because we managed a single platform instead of 13.
 
 - title: Technical documentation
   experience: Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
