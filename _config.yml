@@ -62,7 +62,7 @@ author:
   bio    : "Technical writer, kite-surfer, and kite flier"
   links:
     - label: "Mail"
-      icon: "fa fa-envelope"
+      icon: "fas fa-fw fa-envelope"
       url: "mailto:timothymcmackin@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
