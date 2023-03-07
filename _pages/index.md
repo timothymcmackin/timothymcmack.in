@@ -18,7 +18,7 @@ Here's my [resume](./resume) and my [portfolio](./portfolio), and you can look m
   I've got examples of my work in my [portfolio](./portfolio).
 
 - I like kite flying and kite-surfing, and I'm proud of being a national champion stunt kite pilot.
-My [YouTube](https://www.youtube.com/watch?v=INKPWcv_i0k&list=PLpDx-rmEnbuxnaXKmQslL_sj66lUKm_16) account has my kite videos and [this site](https://timothymcmackin.github.io/kite-site/) has my kite collection.
+My [YouTube](https://www.youtube.com/watch?v=INKPWcv_i0k&list=PLpDx-rmEnbuxnaXKmQslL_sj66lUKm_16) account has my kite videos and I am working on a [catalog of my kite collection](https://timothymcmackin.github.io/kite-site/).
 
 - I used to use Twitter as [@timothymcmackin](https://twitter.com/timothymcmackin) as my primary social media, but I am moving to Mastodon, where I am [@timothymcmackin@mastodon.social](https://mastodon.social/@timothymcmackin).
 The best way to get in touch with me is by email or LinkedIn.
