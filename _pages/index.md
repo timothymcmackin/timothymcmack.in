@@ -12,7 +12,7 @@ Here's my [resume](./resume) and my [portfolio](./portfolio), and you can look m
   Here's what I do:
 
   - Technical writing to simplify complicated software suites and guide users through their tasks
-  - Documentation and coding to combine generated API/SDK reference with handwritten information and examples
+  - Coding to publish technical information and combine generated API/SDK reference with handwritten information and examples
   - Leadership for teams of technical writers
 
   I've got examples of my work in my [portfolio](./portfolio).
