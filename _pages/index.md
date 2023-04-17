@@ -11,7 +11,7 @@ Here's my [resume](./resume) and my [portfolio](./portfolio), and you can look m
 
   Here's what I do:
 
-  - Techical writing to simplify complicated software suites and guide users through their tasks
+  - Technical writing to simplify complicated software suites and guide users through their tasks
   - Documentation and coding to combine generated API/SDK reference with handwritten information and examples
   - Leadership for teams of technical writers
 
