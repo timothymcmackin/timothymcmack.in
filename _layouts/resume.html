@@ -100,13 +100,11 @@ layout: default
 
         {% comment %} Education {% endcomment %}
         <div class="company heading-indent">{{ site.data.resume_education.title }}</div>
-        <div class="resume-list">
-          <ul>
-            {% for oneEdu in site.data.resume_education.entries %}
-              <li>{{ oneEdu.degree }}: {{ oneEdu.school }}, {{ oneEdu.city }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        <ul class="roles">
+          {% for oneEdu in site.data.resume_education.entries %}
+            <li>{{ oneEdu.degree }}: {{ oneEdu.school }}, {{ oneEdu.city }}</li>
+          {% endfor %}
+        </ul>
 
       </section>
     </div>
