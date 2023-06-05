@@ -9,8 +9,31 @@ section.page__content {
   font-weight: bold;
 }
 
-.summary-list {
-  width: 80%;
+.heading-indent {
+  @include breakpoint($large) {
+    position: relative;
+    left: -50px;
+  }
+}
+
+.summary-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  place-content: flex-start;
+  margin: 18px 0px 0px 0px;
+  @include breakpoint($medium) {
+    flex-direction: row;
+  }
+}
+
+.summary-flex div {
+  margin-bottom: 18px;
+  margin-right: 12px;
+  @include breakpoint($medium) {
+    width: 30%;
+  }
 }
 
 .experience-grid-fromdata {

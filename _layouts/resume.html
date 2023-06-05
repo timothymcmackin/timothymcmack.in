@@ -27,15 +27,16 @@ layout: default
         {{ content }}
 
         {% comment %} Summary {% endcomment %}
-        <div class="summary-heading">{{ site.data.resume_summary.title }}</div>
-        <ul class="summary-list">
+        <div class="summary-heading heading-indent">{{ site.data.resume_summary.title }}</div>
+        <div class="summary-flex">
           {% for oneSum in site.data.resume_summary.entries %}
-            <li>{{ oneSum }}</li>
+            <div>{{ oneSum }}</div>
           {% endfor %}
-        </ul>
+
+        </div>
 
         {% comment %} Shutterstock {% endcomment %}
-        <div class="company">{{ site.data.resume_sstk.title }}</div>
+        <div class="company heading-indent">{{ site.data.resume_sstk.title }}</div>
         <ul class="roles">
           {% for oneRole in site.data.resume_sstk.roles %}
           <li>{{ oneRole }}</li>
@@ -64,7 +65,7 @@ layout: default
         </div>
 
         {% comment %} IBM {% endcomment %}
-        <div class="company">{{ site.data.resume_ibm.title }}</div>
+        <div class="company heading-indent">{{ site.data.resume_ibm.title }}</div>
         <ul class="roles">
           {% for oneRole in site.data.resume_ibm.roles %}
           <li>{{ oneRole }}</li>
@@ -84,7 +85,7 @@ layout: default
         </div>
 
         {% comment %} Additional {% endcomment %}
-        <div class="company additional-heading">{{ site.data.resume_additional.title }}</div>
+        <div class="company heading-indent additional-heading">{{ site.data.resume_additional.title }}</div>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_additional.entries %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -98,7 +99,7 @@ layout: default
         </div>
 
         {% comment %} Education {% endcomment %}
-        <div class="company">{{ site.data.resume_education.title }}</div>
+        <div class="company heading-indent">{{ site.data.resume_education.title }}</div>
         <div class="resume-list">
           <ul>
             {% for oneEdu in site.data.resume_education.entries %}
