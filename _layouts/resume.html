@@ -84,7 +84,7 @@ layout: default
         </div>
 
         {% comment %} Additional {% endcomment %}
-        <div class="company">{{ site.data.resume_additional.title }}</div>
+        <div class="company additional-heading">{{ site.data.resume_additional.title }}</div>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_additional.entries %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
