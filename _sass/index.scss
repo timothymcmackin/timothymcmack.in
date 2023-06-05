@@ -1,0 +1,14 @@
+.aboutMeFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  clear: both;
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.aboutMeFlex .smallDiv {
+  flex-basis: 230px;
+  margin-right: 60px;
+}

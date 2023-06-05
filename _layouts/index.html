@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="page__inner-wrap">
+
+      <section class="page__content e-content" itemprop="text">
+
+        {{ content }}
+
+        <div class="aboutMe">
+          {% assign aboutMe = site.data.index.aboutMe %}
+          <div>
+            <p>{{ aboutMe.headText }}</p>
+            {% if aboutMe.bullets %}
+            <ul>
+              {% for bullet in aboutMe.bullets %}
+              <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            <p>{{ aboutMe.text }}</p>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <div class="aboutMeFlex">
+      {% for block in site.data.index.blocks %}
+        <div class="smallDiv">
+          <p>{{ block.headText }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </article>
+
+
+</div>

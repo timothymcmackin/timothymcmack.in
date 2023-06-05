@@ -1,0 +1,18 @@
+aboutMe:
+  headText: "I'm looking for my next job in technical writing/software documentation. Here's what I do:"
+  bullets:
+    - I explain complicated computer systems, tasks, and concepts in plain English.
+    - I write code for working example applications and for building and publishing technical documentation.
+    - I lead teams of technical writers.
+  text: Here's my <a href="./resume">resume</a> and my <a
+    href="./portfolio">portfolio</a> and you can look me up on <a
+    href="https://www.linkedin.com/in/timothymcmackin/" target="_blank">LinkedIn</a>.
+
+blocks:
+  - headText: >
+      I like kite flying and kite-surfing, and I'm proud of being a national champion stunt kite pilot.
+      My <a href="https://www.youtube.com/watch?v=lYv6042iTX8&list=PLpDx-rmEnbuxnaXKmQslL_sj66lUKm_16&index=1" target="_blank">Youtube</a> account has my kite videos and I am working on a <a href="https://timothymcmackin.github.io/kite-site/" target="_blank">catalog of my kite collection</a>.
+
+  - headText: >
+      I used to use Twitter as <a href="https://twitter.com/timothymcmackin" target="_blank">@timothymcmackin</a> as my primary social media, but I am moving to <a href="https://mastodon.social/@timothymcmackin" target="_blank">Mastodon</a>, but I don't use it much yet.
+      The best way to get in touch with me is by <a href="mailto:timothymcmackin@gmail.com" rel="nofollow noopener noreferrer">email</a> or <a href="https://www.linkedin.com/in/timothymcmackin/" target="_blank">LinkedIn</a>.
