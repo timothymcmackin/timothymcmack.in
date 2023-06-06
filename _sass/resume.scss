@@ -20,7 +20,7 @@ section.page__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
   place-content: flex-start;
   margin: 18px 0px 0px 0px;
   @include breakpoint($medium) {
@@ -28,11 +28,22 @@ section.page__content {
   }
 }
 
-.summary-flex div {
+.summary-flex .summary-item {
   margin-bottom: 18px;
-  margin-right: 12px;
   @include breakpoint($medium) {
     width: 30%;
+  }
+}
+
+.summary-flex .summary-bullet {
+  margin-right: 16px;
+  margin-left: 4px;
+  margin-bottom: 16px;
+  align-self: center;
+  display: none;
+  font-size: 28pt;
+  @include breakpoint($medium) {
+    display: block;
   }
 }
 

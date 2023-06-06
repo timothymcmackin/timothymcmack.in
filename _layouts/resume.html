@@ -30,9 +30,11 @@ layout: default
         <div class="summary-heading heading-indent">{{ site.data.resume_summary.title }}</div>
         <div class="summary-flex">
           {% for oneSum in site.data.resume_summary.entries %}
-            <div>{{ oneSum }}</div>
+            <div class="summary-item">{{ oneSum }}</div>
+            {% unless forloop.last %}
+              <div class="summary-bullet">&#8226;</div>
+            {% endunless -%}
           {% endfor %}
-
         </div>
 
         {% comment %} Shutterstock {% endcomment %}
