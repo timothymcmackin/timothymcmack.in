@@ -3,7 +3,7 @@ roles:
 - 'Staff Information Engineer IV: 2022'
 - 'Senior Information Engineer: 2017-2022'
 entries:
-- title: API reference
+- title: Developer documentation
   experience: Developed and wrote <a href="https://api-reference.shutterstock.com">documentation for Shutterstock's public API</a>, SDK, CLI, UI widgets, and <a href="https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial" target="_blank">AI tools</a> by creating a pipeline to merge OpenAPI spec files with manually written examples and task-oriented content.
   result: These docs reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicates that documentation is a major factor in getting integrations working quickly.
 
