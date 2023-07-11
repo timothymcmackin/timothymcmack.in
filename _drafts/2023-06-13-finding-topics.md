@@ -1,6 +1,6 @@
 ---
 title: Finding docs to write for your portfolio
-permalink: 101-finding-topics
+permalink: finding-topics
 toc: true
 tags:
 - technicalwriting101
