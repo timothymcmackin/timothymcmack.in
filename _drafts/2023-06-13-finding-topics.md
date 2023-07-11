@@ -13,9 +13,9 @@ On Reddit [/r/technicalwriting101](https://www.reddit.com/r/technicalwriting101/
 <!--more-->
 - I found a project, but it's not immediately clear what docs it needs; how can I figure out what to write?
 
-At the core of these questions is the problem that it's hard to look at a piece of software that's new to you and understand it well enough that you can create docs that help people use it.
+At the core of these questions is this problem: it's hard to look at a piece of new software and understand it well enough to know what docs it needs.
 
-If you're asking these questions, congratulations!
+If you're feeling this problem, congratulations!
 You've discovered two important things:
 
 - Technical writing isn't easy
