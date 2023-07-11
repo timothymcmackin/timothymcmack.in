@@ -29,8 +29,10 @@ As a new technical writer, have you used any of this software?
 
 - Doc platforms: Gatsby, Hugo, Jekyll, Docusaurus, and a million others
 - Doc languages: Markdown, AsciiDoc, rST
+- Programming languages: (millions)
 - Testing platforms: Jest, Puppeteer, Playwright, Vale, Mocha
 - Tools that generate docs from code: swagger-codegen, slate/reslate/widdershins/shins, javadoc, pydoc, typedoc, spectaql, dociql, and a million others
+- General tools that writers use: productivity tools like [Ditto](https://github.com/sabrogden/Ditto), screenshot tools like [ShareX](https://getsharex.com/), desktop publishing tools like [Scribus](https://www.scribus.net/), text editors, DITA editors, and a million others
 
 You might think that all of these platforms are well-documented because they're intended for tech writers, but many of them have holes in their docs.
 
@@ -40,7 +42,7 @@ In a future post I'm going to write about how I would write a getting started gu
 
 If there's no major need in the doc software you've got experience with, how about integrating one tool with another?
 
-- Guide for installing and using a specific plugin
+- Guide for installing and using a specific plugin into software you're familiar with
 - Guide to applying a certain template onto a doc platform
 - Guide to using a testing platform on docs
 - Guide to customizing the docs that come out of the doc-generation tools
@@ -61,12 +63,14 @@ There
 Think about the things that you want to learn or do with technology.
 That's hard because the options are infinite, but you can pick something to try out and see if you like it.
 
-Do you want to publish web sites?
-Write programs to automate tasks?
-Create web applications?
-Edit videos or pictures?
+Do you want to:
 
-You can do all of these things for free with open-source tools.
+- Publish web sites?
+- Write programs to automate tasks?
+- Create web applications?
+- Edit videos or pictures?
+
+You can do all of these things for free with open-source tools — it just takes some research and practice.
 
 One great place to start is with an online resume and portfolio site or just a simple personal web page that introduces yourself and points to other accounts or sites that you want to share.
 
@@ -75,6 +79,20 @@ Then you can take notes as you learn the tool and think about what you could wri
 ### What do you already know how to do?
 
 And if you already know how to do any of those things, find an [open-source equivalent](https://github.com/btw-so/open-source-alternatives) to that tool, learn it, and find what docs it needs.
+
+### Look at APIs and SDKs
+
+API docs are hot right now, and organizations like [API the Docs](https://apithedocs.org/) are trying to get writers familiar with the specific needs of API doc.
+
+One part of API/SDK doc is generating useful info from the spec or code with tools like OpenAPI and TypeDoc, but I strongly believe that good API docs need task-based information.
+Listing the commands is never enough; writers need to explain how to actually use the API.
+So you can find an API and document the common tasks with that API.
+
+For example, I've been playing the free REST API-based trade route game [Spacetraders](https://spacetraders.io/) and it's got a good quickstart and API docs.
+However, there are things you can do with the game that are not documented in detail, like setting up a loop that make a ship mine until it's full and then sell the mined resources at a market.
+
+Most API docs, no matter how good they are, have tasks that are not documented, either because the original tech writer didn't do them or judged the tasks to be not important enough to document in detail.
+In those cases, you can document those tasks and contribute them or just use them as portfolio samples.
 
 ### Look at command-line tools
 
@@ -92,7 +110,7 @@ It's spectacular for quick reference; all you have to do is compare the results 
 
 In short, `tldr` starts with a description of what the command does and a series of simple examples.
 The `man` output doesn't even tell you what the command does.
-(Yeah, Linux users should know `tar`, but they all had to learn it at some time.)
+(Yeah, Linux users should know `tar`, but they [all had to learn it](https://xkcd.com/1168/) at some time.)
 
 So it's a great tool.
 Let's see if it has any doc needs.
@@ -105,7 +123,7 @@ Those pages are community-provided, so anyone can add help information for a com
 There are [guidelines](https://github.com/tldr-pages/tldr/blob/main/CONTRIBUTING.md) for contributing pages about a command, but these guidelines skip over some important details and assume that you can look at the repository and figure out:
 
 - To provide info for a command, where do I put the files?
-- The guidelines say that the info for the commands is in Markdown, but markdown isn't standardized. What markup can I use and how does the program treat that output?
+- The guidelines say that the info for the commands is in Markdown, but markdown isn't standardized. What markup can I use and how does the program treat that output? List some do's and don'ts and examples of what certain markup looks like in the output.
 
 There's an opportunity here for a simple getting started guide that shows how to add help for a command to `tldr` and submit it in a PR to the maintainer.
 
