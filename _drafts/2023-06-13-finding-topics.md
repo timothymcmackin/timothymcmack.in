@@ -58,7 +58,6 @@ They've made me think about all kinds of use cases, like automating stuff around
 
 There's software out there that can do all sorts of things for you; you just have to work out what you want to learn and do.
 For a lot of new tech writers, that's building an online resume/portfolio site, or just a simple personal web page that introduces you and points to other accounts or sites that you want to share.
-There
 
 ### What do you want to do?
 
