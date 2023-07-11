@@ -1,4 +1,4 @@
-section.page__content {
+section.page__content.resume {
   @include breakpoint($large) {
     width: 1000px;
     padding-left: 100px;
