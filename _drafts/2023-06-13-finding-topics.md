@@ -88,7 +88,7 @@ One part of API/SDK doc is generating useful info from the spec or code with too
 Listing the commands is never enough; writers need to explain how to actually use the API.
 So you can find an API and document the common tasks with that API.
 
-For example, I've been playing the free REST API-based trade route game [Spacetraders](https://spacetraders.io/) and it's got a good quickstart and API docs.
+For example, I've been playing the free REST API-based trade route game [SpaceTraders](https://spacetraders.io/) and it's got a good quickstart and API docs.
 However, there are things you can do with the game that are not documented in detail, like setting up a loop that make a ship mine until it's full and then sell the mined resources at a market.
 
 Most API docs, no matter how good they are, have tasks that are not documented, either because the original tech writer didn't do them or judged the tasks to be not important enough to document in detail.
