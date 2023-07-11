@@ -1,11 +1,13 @@
 ---
 title: Writing a getting started guide
+permalink: 101-getting-started
+toc: true
 tags:
 - technicalwriting101
 - portfolio-samples
 ---
 
-I recently wrote about [Finding docs to write for your portfolio]({% post_url '2023-06-13-finding-topics' %}) and I mentioned how hard it can be to do the research to learn enough about software to write about it.
+I recently wrote about [Finding docs to write for your portfolio]({% post_url 2023-06-13-finding-topics %}) and I mentioned how hard it can be to do the research to learn enough about software to write about it.
 So I figured it might help if I walked through my entire process for research for a new document.
 This post is verbose because I want to cover the whole process and not skip any steps.
 

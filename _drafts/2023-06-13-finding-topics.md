@@ -1,5 +1,7 @@
 ---
 title: Finding docs to write for your portfolio
+permalink: 101-finding-topics
+toc: true
 tags:
 - technicalwriting101
 - portfolio-samples
