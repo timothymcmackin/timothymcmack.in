@@ -1,3 +1,10 @@
+section.page__content.index {
+  @include breakpoint($large) {
+    width: 1000px;
+    padding-left: 100px;
+  }
+}
+
 .aboutMeFlex {
   display: flex;
   flex-wrap: wrap;
