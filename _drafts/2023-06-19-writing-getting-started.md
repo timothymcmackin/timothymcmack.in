@@ -1,6 +1,5 @@
 ---
 title: Writing a getting started guide
-permalink: getting-started
 toc: true
 tags:
 - technicalwriting101
