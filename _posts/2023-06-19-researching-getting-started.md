@@ -101,7 +101,7 @@ Here's how I'd do this for a Vale getting started guide:
 
    ![Listing the markdown files in Jekyll's documentation](/assets/images/blog/ls-docs.png)
 
-1. Install the software I'm documenting.
+1. Install the software.
 
    Ok, now I'm ready for Vale and fortunately it's got [installation instructions](https://vale.sh/docs/vale-cli/installation/).
    The instructions for Windows say to use the Chocolatey package manager and the instructions for Mac say to use the Brew package manager.
@@ -161,7 +161,7 @@ Here's how I'd do this for a Vale getting started guide:
    This is all part of the research experience, so don't be afraid to try different things, search for info and tips, and ask people for help.
    Setting up a development environment is hard at first, but it gets easier as you get more familiar with installing tools in this way.
 
-1. Run the software I'm documenting.
+1. Run the software.
 
    Finally I'm at the part I'm most interested in: Running Vale on the Jekyll documentation.
    To figure out how to do this, I have to read the existing Vale docs and look at examples of how to run Vale against docs.
@@ -232,7 +232,7 @@ Here's how I'd do this for a Vale getting started guide:
    A simple way to do that is to add a note in the readme about running Vale, but it would be better if I documented how to include the Vale script as part of the usual build process.
    There are many ways to do that, such as including the Vale command as part of the GitHub workflows in the `.github/workflows` folder or adding it as a script to the `package.json` file of a Node project, but I'm going to stop here.
 
-1. Test and refine
+1. Test and refine the details.
 
    But I'm not done yet — there's a lot of refinement work before the guide is easy for everyone to use.
    Some of these refinement steps are:
