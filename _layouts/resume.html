@@ -103,16 +103,6 @@ layout: default
           {% endfor %}
         </div>
 
-        {% comment %} Other skills {% endcomment %}
-        <div class="company heading-indent additional-heading">{{ site.data.resume_other_skills.title }}</div>
-        <div class="experience-grid-fromdata">
-          {% for oneEntry in site.data.resume_other_skills.entries %}
-            <div class="experience-other-skills">
-              {{ oneEntry }}
-            </div>
-          {% endfor %}
-        </div>
-
         {% comment %} Education {% endcomment %}
         <div class="company heading-indent">{{ site.data.resume_education.title }}</div>
         <ul class="roles">
