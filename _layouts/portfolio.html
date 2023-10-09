@@ -23,26 +23,25 @@ layout: default
         </header>
       {% endunless %}
 
+      {{ content }}
+
       <section class="page__content portfolio" itemprop="text">
-        {{ content }}
-        <div class="portfolio">
-          {% for entry in site.data.portfolio.entries %}
-          <div>
-            <a href="{{ entry.url }}" target="_blank">
-              <img src="{{ entry.image }}" alt=""/>
-              {{ entry.title }}
-            </a>
+        {% for entry in site.data.portfolio.entries %}
+        <div>
+          <a href="{{ entry.url }}" target="_blank">
+            <img src="{{ entry.image }}" alt=""/>
+            {{ entry.title }}
+          </a>
+          <p>
+            {{ entry.description }}
+          </p>
+          {% if entry.followup %}
             <p>
-              {{ entry.description }}
+              {{ entry.followup }}
             </p>
-            {% if entry.followup %}
-              <p>
-                {{ entry.followup }}
-              </p>
-            {% endif %}
-          </div>
-          {% endfor %}
+          {% endif %}
         </div>
+        {% endfor %}
       </section>
     </div>
   </article>
