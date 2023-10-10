@@ -20,7 +20,7 @@ entries:
   url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
   image: /assets/images/ai-tutorial-birds-crop.png
   description: >
-    This tutorial covers using the reverse image search and keyword suggestion features of our computer vision services.
+    This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
     It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
     I researched and wrote all of the content.
 
@@ -28,7 +28,7 @@ entries:
   url: https://www.shutterstock.com/developers/documentation/tutorial
   image: /assets/images/tutorial-ov-crop.png
   description: >
-    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how our partners use it, and how it provides licensed images.
+    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how Shutterstock's partners use it, and how it provides licensed images.
     The tutorial includes instructions for Postman, cURL, the Shutterstock CLI, and the Shutterstock JavaScript SDK.
     I researched and wrote all of the content.
 
@@ -36,7 +36,7 @@ entries:
   url: https://www.dropbox.com/s/nc5lkmgtkrvbcpi/UCDPerformanceCharacteristics.pdf?dl=0
   image: /assets/images/performance-graphs.png
   description: >
-    I planned, wrote, and typeset this white paper based on testing data from our product development teams.
+    I planned, wrote, and typeset this white paper based on testing data from one of IBM's product development teams.
     I consulted with the performance testers about what the test results meant and with the customer-facing teams that needed to explain the performance of the product to current and potential customers.
 
 - title: Rollback scenarios in IBM UrbanCode Deploy
@@ -47,4 +47,4 @@ entries:
     It demonstrates techniques for reversing problems automatically, and it teaches customers about a common misconception about the product at the same time.
     I researched, wrote, and recorded the video.
   followup: >
-    Our internal support call analysis showed significantly fewer customer issues in this area after I delivered and promoted the video.
+    Analysis of support calls showed significantly fewer customer issues in this area after I delivered and promoted the video.
