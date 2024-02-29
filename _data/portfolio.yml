@@ -8,6 +8,14 @@ entries:
   followup: >
     By providing clear and thorough information for partners using the Shutterstock API, this reference information reduced the average partner integration time from 3 months to 1.2 months.
 
+- title: Documentation for the Tezos SDK for Unity
+  url: https://docs.tezos.com/unity
+  image: /assets/images/unity-sdk-crop.png
+  description: >
+    This documentation provides the quickest possible route for experienced Unity game developers to use Tezos as their backend.
+    It starts with a quickstart and leads users into task-based tech docs and reference for the SDK objects.
+    I researched and wrote all of the content.
+
 - title: Shutterstock developer portal documentation
   url: https://www.shutterstock.com/developers/documentation
   image: /assets/images/dev-portal-downloading-crop.png
@@ -16,13 +24,13 @@ entries:
     Along with information about using the API, JavaScript SDK, and CLI, I've added a tutorial and information that helps Shutterstock's enterprise clients allow their employees to access Shutterstock through single sign-on.
     I didn't build this platform, but I expanded it as the content grew, and I wrote most of the content.
 
-- title: "Tutorial: Using the computer vision features of the Shutterstock API"
-  url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
-  image: /assets/images/ai-tutorial-birds-crop.png
-  description: >
-    This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
-    It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
-    I researched and wrote all of the content.
+# - title: "Tutorial: Using the computer vision features of the Shutterstock API"
+#   url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
+#   image: /assets/images/ai-tutorial-birds-crop.png
+#   description: >
+#     This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
+#     It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
+#     I researched and wrote all of the content.
 
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
