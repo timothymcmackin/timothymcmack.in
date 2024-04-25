@@ -70,10 +70,10 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/timothymcmackin/"
-    - label: "Mastodon"
-      icon: "fab fa-fw fa-mastodon"
-      url: https://mastodon.social/@timothymcmackin
-      rel: me
+    # - label: "Mastodon"
+    #   icon: "fab fa-fw fa-mastodon"
+    #   url: https://mastodon.social/@timothymcmackin
+    #   rel: me
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/timothymcmackin"
@@ -89,9 +89,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/timothymcmackin/"
-    - label: "Mastodon"
-      icon: "fab fa-fw fa-mastodon"
-      url: https://mastodon.social/@timothymcmackin
+    # - label: "Mastodon"
+    #   icon: "fab fa-fw fa-mastodon"
+    #   url: https://mastodon.social/@timothymcmackin
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/timothymcmackin"
