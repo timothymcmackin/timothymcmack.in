@@ -39,6 +39,11 @@ layout: default
 
         {% comment %} TriliTech {% endcomment %}
         <div class="company heading-indent">{{ site.data.resume_trilitech.title }}</div>
+        <ul class="roles">
+          {% for oneRole in site.data.resume_trilitech.roles %}
+          <li>{{ oneRole }}</li>
+          {% endfor %}
+        </ul>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_trilitech.entries %}
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
