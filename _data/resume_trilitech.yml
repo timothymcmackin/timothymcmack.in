@@ -3,5 +3,6 @@ roles:
 - 'Senior Technical Writer: 2023-present'
 entries:
 - Redesigning and rewriting <a href="https://docs.tezos.com" target="_blank">docs.tezos.com</a> to provide developer documentation for the Tezos blockchain and its array of languages and developer tools.
-- Updating tutorials and learning courses to introduce new developers to the open-source technology.
+- Writing and updating tutorials and sample applications in the four programming languages supported by the Tezos platform.
+- Restructuring and updating the documentation for the SmartPy, JsLIGO, and CameLIGO programming languages.
 - Hosting live, in-person hackathons and helping college students start building with Tezos quickly.
