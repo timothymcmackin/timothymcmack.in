@@ -1,4 +1,12 @@
 entries:
+
+- title: SmartPy language documentation
+  url: https://releases.smartpy.io/0.19.2a3/manual/introduction/overview
+  image: /assets/images/smartpy-example.png
+  description: >
+    This documentation for the SmartPy smart contract programming language needed improvements to make it clearer to programmers coming from more traditional programming environments.
+    I did a full reorganization and rewrite of the language reference manual.
+
 - title: Shutterstock API, SDK, and CLI reference
   url: https://api-reference.shutterstock.com/
   image: /assets/images/ai-search-crop.png
@@ -8,6 +16,14 @@ entries:
   followup: >
     By providing clear and thorough information for partners using the Shutterstock API, this reference information reduced the average partner integration time from 3 months to 1.2 months.
 
+- title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
+  url: https://www.shutterstock.com/developers/documentation/tutorial
+  image: /assets/images/tutorial-ov-crop.png
+  description: >
+    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how Shutterstock's partners use it, and how it provides licensed images.
+    The tutorial includes instructions for Postman, cURL, the Shutterstock CLI, and the Shutterstock JavaScript SDK.
+    I researched and wrote all of the content.
+
 - title: Documentation for the Tezos SDK for Unity
   url: https://docs.tezos.com/unity
   image: /assets/images/unity-sdk-crop.png
@@ -16,13 +32,13 @@ entries:
     It starts with a quickstart and leads users into task-based tech docs and reference for the SDK objects.
     I researched and wrote all of the content.
 
-- title: Shutterstock developer portal documentation
-  url: https://www.shutterstock.com/developers/documentation
-  image: /assets/images/dev-portal-downloading-crop.png
-  description: >
-    This documentation covers many of the same topics as the API reference but is aimed at decision-makers and architects.
-    Along with information about using the API, JavaScript SDK, and CLI, I've added a tutorial and information that helps Shutterstock's enterprise clients allow their employees to access Shutterstock through single sign-on.
-    I didn't build this platform, but I expanded it as the content grew, and I wrote most of the content.
+# - title: Shutterstock developer portal documentation
+#   url: https://www.shutterstock.com/developers/documentation
+#   image: /assets/images/dev-portal-downloading-crop.png
+#   description: >
+#     This documentation covers many of the same topics as the API reference but is aimed at decision-makers and architects.
+#     Along with information about using the API, JavaScript SDK, and CLI, I've added a tutorial and information that helps Shutterstock's enterprise clients allow their employees to access Shutterstock through single sign-on.
+#     I didn't build this platform, but I expanded it as the content grew, and I wrote most of the content.
 
 # - title: "Tutorial: Using the computer vision features of the Shutterstock API"
 #   url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
@@ -31,14 +47,6 @@ entries:
 #     This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
 #     It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
 #     I researched and wrote all of the content.
-
-- title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
-  url: https://www.shutterstock.com/developers/documentation/tutorial
-  image: /assets/images/tutorial-ov-crop.png
-  description: >
-    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how Shutterstock's partners use it, and how it provides licensed images.
-    The tutorial includes instructions for Postman, cURL, the Shutterstock CLI, and the Shutterstock JavaScript SDK.
-    I researched and wrote all of the content.
 
 - title: Performance characteristics of IBM UrbanCode Deploy
   url: https://www.dropbox.com/s/nc5lkmgtkrvbcpi/UCDPerformanceCharacteristics.pdf?dl=0
