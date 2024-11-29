@@ -2,9 +2,9 @@ title: 'TriliTech (Remote): 2023-present'
 roles:
 - 'Senior Technical Writer: 2023-present'
 entries:
+- Updating the developer documentation for the <a href="https://docs.tezos.com" target="_blank">Tezos blockchain</a>, including API and SDK reference, tutorials, and developer-focused tasks.
+- Documenting the <a href="https://docs.etherlink.com" target="_blank">Tezos Etherlink Ethereum compatibility layer</a> and its Solidity kernel.
 - Restructuring and clarifying the documentation for the <a href="https://releases.smartpy.io/0.19.2a3/manual/introduction/overview" target="_blank">SmartPy</a>, JsLIGO, and CameLIGO programming languages.
-- Writing and updating <a href="https://docs.tezos.com/tutorials" target="_blank">tutorials</a> and sample applications in the four programming languages supported by the Tezos platform.
-- Documenting complex, multi-layered network scenarios for data distribution and token transfer.
 - Documenting the <a href="https://docs.tezos.com/unity" target="_blank">Tezos SDK for Unity</a> video game development tooling.
 
 # - Consolidating documentation sites created by decentralized Tezos-supported companies.
