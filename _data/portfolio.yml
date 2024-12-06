@@ -1,7 +1,7 @@
 entries:
 
 - title: SmartPy language documentation
-  url: https://releases.smartpy.io/0.19.2a3/manual/introduction/overview
+  url: https://smartpy.io/manual/introduction/overview
   image: /assets/images/smartpy-example.png
   description: >
     This documentation for the SmartPy smart contract programming language needed improvements to make it clearer to programmers coming from more traditional programming environments.
