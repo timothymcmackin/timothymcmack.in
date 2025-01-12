@@ -2,9 +2,24 @@
 layout: default
 ---
 
+<script src="/assets/js/portfolioTags.js"></script>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
+
+{% comment %} Get a list of all tags {% endcomment %}
+{% assign allTags = "" | split: ',' %}
+{% for entry in site.data.portfolio.entries %}
+  {% if entry.tags %}
+    {% for tag in entry.tags %}
+      {% unless allTags contains tag %}
+        {% assign allTags = allTags | push: tag %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign allTags = allTags | sort %}
 
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
@@ -26,22 +41,51 @@ layout: default
       {{ content }}
 
       <section class="page__content portfolio" itemprop="text">
-        {% for entry in site.data.portfolio.entries %}
-        <div>
-          <a href="{{ entry.url }}" target="_blank">
-            <img src="{{ entry.image }}" alt=""/>
-            {{ entry.title }}
-          </a>
-          <p>
-            {{ entry.description }}
-          </p>
-          {% if entry.followup %}
-            <p>
-              {{ entry.followup }}
-            </p>
-          {% endif %}
+
+        {% comment %} Tag cloud {% endcomment %}
+        <div class="tagFlex">
+          {% for tag in allTags %}
+            <a
+              class="tagButton"
+              onclick="toggleTag('{{tag}}')"
+              tagName="{{ tag }}"
+            >{{ tag }}</a>
+          {% endfor %}
+          <a
+            class="tagButton"
+            id="showAllButton"
+            status="off"
+            onclick="showEverything()"
+          >All tags</a>
         </div>
+
+        <div class="portfolioEntries">
+        {% for entry in site.data.portfolio.entries %}
+          {% assign entryClasses = "portfolioEntry" %}
+          {% if entry.default != true %}
+            {% assign entryClasses = entryClasses | append: " portfolioHide" %}
+          {% endif %}
+          <div
+            class="{{ entryClasses }}"
+            tags="{{ entry.tags | join: ',' }}"
+            default="{{ entry.default }}"
+          >
+            <a href="{{ entry.url }}" target="_blank">
+              <img src="{{ entry.image }}" alt=""/>
+              {{ entry.title }}
+            </a>
+            <p>
+              {{ entry.description }}
+            </p>
+            {% if entry.followup %}
+              <p>
+                {{ entry.followup }}
+              </p>
+            {% endif %}
+          </div>
         {% endfor %}
+        </div>
+
       </section>
     </div>
   </article>
