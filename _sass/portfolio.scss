@@ -5,27 +5,23 @@ section.page__content.portfolio {
   }
 }
 
-.portfolio .portfolioEntries {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
 
-.portfolio .portfolioEntries > div {
+.portfolio > div {
   width: 250px;
   margin: 20px;
 }
 
-.portfolioHide {
-  display: none;
-}
-
-.portfolio .portfolioEntries a {
+.portfolio a {
   font-weight: bold;
 }
 
-.portfolio .portfolioEntries p {
+.portfolio p {
   margin-top: 20px;
 
   @include breakpoint($large) { // will convert to a max-width:1024px media query
@@ -34,32 +30,6 @@ section.page__content.portfolio {
   }
 }
 
-.portfolio .portfolioEntries img {
+.portfolio img {
   padding-bottom: 10px;
-}
-
-.portfolio .tagFlex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.portfolio .tagFlex > a {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 8px;
-  color: white;
-  background: gray;
-}
-
-.portfolio .tagFlex > a.tagButtonSelected {
-  background: #000;
-}
-
-.portfolio .tagFlex a:hover {
-  color: #fff;
-  background: #0099ff;
-  text-decoration: none;
-  cursor: pointer;
 }

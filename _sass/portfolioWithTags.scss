@@ -1,0 +1,65 @@
+section.page__content.portfolioWithTags {
+  @include breakpoint($large) {
+    width: 1000px;
+    padding-left: 100px;
+  }
+}
+
+.portfolioWithTags .portfolioEntries {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolioWithTags .portfolioEntries > div {
+  width: 250px;
+  margin: 20px;
+}
+
+.portfolioHide {
+  display: none;
+}
+
+.portfolioWithTags .portfolioEntries a {
+  font-weight: bold;
+}
+
+.portfolioWithTags .portfolioEntries p {
+  margin-top: 20px;
+
+  @include breakpoint($large) { // will convert to a max-width:1024px media query
+    // 1024px wide and up styles here
+    font-size: small;
+  }
+}
+
+.portfolioWithTags .portfolioEntries img {
+  padding-bottom: 10px;
+}
+
+.portfolioWithTags .tagFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portfolioWithTags .tagFlex > a {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 8px;
+  color: white;
+  background: gray;
+}
+
+.portfolioWithTags .tagFlex > a.tagButtonSelected {
+  background: #000;
+}
+
+.portfolioWithTags .tagFlex a:hover {
+  color: #fff;
+  background: #0099ff;
+  text-decoration: none;
+  cursor: pointer;
+}

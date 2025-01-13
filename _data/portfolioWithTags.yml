@@ -3,6 +3,13 @@ entries:
 - title: SmartPy language documentation
   url: https://smartpy.io/manual/introduction/overview
   image: /assets/images/smartpy-example.png
+  default: true
+  tags:
+    - Blockchain
+    - Languages
+    - APIs
+    - SDKs
+    - TriliTech
   description: >
     This documentation for the SmartPy smart contract programming language needed improvements to make it clearer to programmers coming from more traditional programming environments.
     I did a full reorganization and rewrite of the language reference manual.
@@ -10,6 +17,12 @@ entries:
 - title: Shutterstock API, SDK, and CLI reference
   url: https://api-reference.shutterstock.com/
   image: /assets/images/ai-search-crop.png
+  default: true
+  tags:
+    - AI/ML
+    - SDKs
+    - APIs
+    - Shutterstock
   description: >
     I originally built this API reference documentation with Widdershins and Shins but later wrote a custom Node.JS and Nunjucks program to generate it with the help of the API development team.
     It merges handwritten examples and task-based information about using the API with generated examples and endpoint reference from an OpenAPI source file.
@@ -19,6 +32,12 @@ entries:
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
   image: /assets/images/tutorial-ov-crop.png
+  default: true
+  tags:
+    - Tutorials
+    - SDKs
+    - APIs
+    - Shutterstock
   description: >
     This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how Shutterstock's partners use it, and how it provides licensed images.
     The tutorial includes instructions for Postman, cURL, the Shutterstock CLI, and the Shutterstock JavaScript SDK.
@@ -27,30 +46,51 @@ entries:
 - title: Documentation for the Tezos SDK for Unity
   url: https://docs.tezos.com/unity
   image: /assets/images/unity-sdk-crop.png
+  default: true
+  tags:
+    - Tutorials
+    - SDKs
+    - APIs
+    - TriliTech
+    - Unity
   description: >
     This documentation provides the quickest possible route for experienced Unity game developers to use Tezos as their backend.
     It starts with a quickstart and leads users into task-based tech docs and reference for the SDK objects.
     I researched and wrote all of the content.
 
-# - title: Shutterstock developer portal documentation
-#   url: https://www.shutterstock.com/developers/documentation
-#   image: /assets/images/dev-portal-downloading-crop.png
-#   description: >
-#     This documentation covers many of the same topics as the API reference but is aimed at decision-makers and architects.
-#     Along with information about using the API, JavaScript SDK, and CLI, I've added a tutorial and information that helps Shutterstock's enterprise clients allow their employees to access Shutterstock through single sign-on.
-#     I didn't build this platform, but I expanded it as the content grew, and I wrote most of the content.
+- title: Shutterstock developer portal documentation
+  url: https://www.shutterstock.com/developers/documentation
+  image: /assets/images/dev-portal-downloading-crop.png
+  tags:
+    - SDKs
+    - APIs
+    - Shutterstock
+  description: >
+    This documentation covers many of the same topics as the API reference but is aimed at decision-makers and architects.
+    Along with information about using the API, JavaScript SDK, and CLI, I've added a tutorial and information that helps Shutterstock's enterprise clients allow their employees to access Shutterstock through single sign-on.
+    I didn't build this platform, but I expanded it as the content grew, and I wrote most of the content.
 
-# - title: "Tutorial: Using the computer vision features of the Shutterstock API"
-#   url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
-#   image: /assets/images/ai-tutorial-birds-crop.png
-#   description: >
-#     This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
-#     It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
-#     I researched and wrote all of the content.
+- title: "Tutorial: Using the computer vision features of the Shutterstock API"
+  url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
+  image: /assets/images/ai-tutorial-birds-crop.png
+  tags:
+    - AI/ML
+    - Tutorials
+    - SDKs
+    - APIs
+    - Shutterstock
+  description: >
+    This tutorial covers using the reverse image search and keyword suggestion features of Shutterstock's computer vision services.
+    It includes end-to-end instructions on setting up a free API account, installing the Shutterstock JavaScript SDK, and writing straightforward Node.JS programs to analyze user-submitted images.
+    I researched and wrote all of the content.
 
 - title: Performance characteristics of IBM UrbanCode Deploy
   url: https://www.dropbox.com/s/nc5lkmgtkrvbcpi/UCDPerformanceCharacteristics.pdf?dl=0
   image: /assets/images/performance-graphs.png
+  default: true
+  tags:
+    - White papers
+    - IBM
   description: >
     I planned, wrote, and typeset this white paper based on testing data from one of IBM's product development teams.
     I consulted with the performance testers about what the test results meant and with the customer-facing teams that needed to explain the performance of the product to current and potential customers.
@@ -58,9 +98,28 @@ entries:
 - title: Rollback scenarios in IBM UrbanCode Deploy
   url: https://www.youtube.com/watch?v=AG_7ulQMZ0M
   image: /assets/images/rollback-workflow-crop.png
+  default: true
+  tags:
+    - Videos
+    - CI/CD
+    - IBM
+    - Cloud
   description: >
     This video addresses customer confusion that I learned about from support requests.
     It demonstrates techniques for reversing problems automatically, and it teaches customers about a common misconception about the product at the same time.
     I researched, wrote, and recorded the video.
   followup: >
     Analysis of support calls showed significantly fewer customer issues in this area after I delivered and promoted the video.
+
+
+- title: Creating and updating full-stack cloud environments with IBM UrbanCode Deploy
+  url: https://youtu.be/gHVUpLG7Im4
+  image: /assets/images/full-stack-cloud-framegrab.png
+  tags:
+    - Videos
+    - CI/CD
+    - IBM
+    - Cloud
+  description: >
+    I planned, wrote, and recorded this video in Camtasia for a set of customers who were upgrading to DevOps-enabled cloud provisioning features.
+    The video demonstrates new automatic provisioning and updating of cloud environments for customers, including animation and live demo.
