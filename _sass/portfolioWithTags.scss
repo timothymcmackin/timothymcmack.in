@@ -61,7 +61,7 @@ section.page__content.portfolioWithTags {
   color: white;
   background: gray;
   border-radius: 8px;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px $masthead-link-color;
 
   @include breakpoint($large) {
     padding: 5px;
