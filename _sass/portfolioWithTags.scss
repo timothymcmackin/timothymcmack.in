@@ -1,7 +1,9 @@
 section.page__content.portfolioWithTags {
   @include breakpoint($large) {
     width: 1000px;
-    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -10,11 +12,13 @@ section.page__content.portfolioWithTags {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  width: 90%;
+  padding-left: 50px;
 }
 
 .portfolioWithTags .portfolioEntries > div {
-  width: 250px;
-  margin: 20px;
+  width: 225px;
+  margin: 0px 20px 20px 20px;
 }
 
 .portfolioHide {
@@ -42,24 +46,53 @@ section.page__content.portfolioWithTags {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  @include breakpoint($large) {
+    flex-direction: column;
+    justify-content: start;
+    width: 10%;
+  }
 }
 
-.portfolioWithTags .tagFlex > a {
-  padding: 5px;
-  margin: 5px;
-  border-radius: 8px;
+.tagButton {
+  display: list-item;
+  list-style-type: none;
+  padding: 10px;
   color: white;
   background: gray;
+  margin: 5px 5px 10px 0px;
+  border-radius: 8px;
+  border-bottom: solid 1px black;
+
+  @include breakpoint($large) {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    color: black;
+    background: none;
+  }
 }
 
-.portfolioWithTags .tagFlex > a.tagButtonSelected {
-  background: #000;
-}
-
-.portfolioWithTags .tagFlex a:hover {
+.tagButton:hover {
   color: #fff;
   background: #0099ff;
-  text-decoration: none;
+  @include breakpoint($large) {
+    color: inherit;
+    background: inherit;
+  }
   cursor: pointer;
+}
+
+.page__content a:not(.btn).tagButton:hover {
+  /* Because the default style tries really hard to underline links on hover */
+  text-decoration: none!important;
+}
+
+.tagButton.tagButtonSelected {
+  list-style-type: none;
+  background: #000;
+  @include breakpoint($large) {
+    list-style-type: inherit;
+    background: inherit;
+  }
 }

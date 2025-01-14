@@ -44,6 +44,12 @@ layout: default
 
         {% comment %} Tag cloud {% endcomment %}
         <div class="tagFlex">
+          <a
+            class="tagButton"
+            id="showAllButton"
+            status="off"
+            onclick="showEverything()"
+          >All tags</a>
           {% for tag in allTags %}
             <a
               class="tagButton"
@@ -51,12 +57,6 @@ layout: default
               tagName="{{ tag }}"
             >{{ tag }}</a>
           {% endfor %}
-          <a
-            class="tagButton"
-            id="showAllButton"
-            status="off"
-            onclick="showEverything()"
-          >All tags</a>
         </div>
 
         <div class="portfolioEntries">
