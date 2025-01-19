@@ -50,6 +50,12 @@ layout: default
             status="off"
             onclick="showEverything()"
           >All tags</a>
+          <a
+            class="tagButton tagButtonSelected"
+            id="showDefaultButton"
+            status="on"
+            onclick="resetToDefaults()"
+          >Top 6</a>
           {% for tag in allTags %}
             <a
               class="tagButton"

@@ -17,6 +17,7 @@ const enableTag = (tagName) => {
 }
 
 const resetToDefaults = () => {
+  // Reset portfolio items to defaults
   const portfolioElements = document.getElementsByClassName("portfolioEntry");
   for (let i = 0; i < portfolioElements.length; i++) {
     const oneElement = portfolioElements[i];
@@ -24,6 +25,19 @@ const resetToDefaults = () => {
       oneElement.classList.remove("portfolioHide");
     } else {
       oneElement.classList.add("portfolioHide");
+    }
+  }
+  // Reset tags
+  enabledTags = [];
+  const tagButtons = document.getElementsByClassName("tagButton");
+  for (let i = 0; i < tagButtons.length; i++) {
+    const oneTagButton = tagButtons[i];
+    if (oneTagButton.id === "showDefaultButton") {
+      oneTagButton.setAttribute("status", "on");
+      oneTagButton.classList.add("tagButtonSelected");
+    } else {
+      oneTagButton.setAttribute("status", "off");
+      oneTagButton.classList.remove("tagButtonSelected");
     }
   }
 }
