@@ -4,23 +4,22 @@ entries:
   url: https://smartpy.io/manual/introduction/overview
   image: /assets/images/smartpy-example.png
   description: >
-    This documentation for the SmartPy smart contract programming language needed improvements to make it clearer to programmers coming from more traditional programming environments.
-    I did a full reorganization and rewrite of the language reference manual.
+    I did a full reorganization and rewrite of this language reference manual to make it clearer to programmers coming from more traditional programming environments.
 
 - title: Shutterstock API, SDK, and CLI reference
   url: https://api-reference.shutterstock.com/
   image: /assets/images/ai-search-crop.png
   description: >
-    I originally built this API reference documentation with Widdershins and Shins but later wrote a custom Node.JS and Nunjucks program to generate it with the help of the API development team.
+    I built this API reference documentation with a custom Node.JS application with the help of the API development team.
     It merges handwritten examples and task-based information about using the API with generated examples and endpoint reference from an OpenAPI source file.
   followup: >
-    By providing clear and thorough information for partners using the Shutterstock API, this reference information reduced the average partner integration time from 3 months to 1.2 months.
+    This reference information reduced the average API partner integration time from 3 months to 1.2 months.
 
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
   image: /assets/images/tutorial-ov-crop.png
   description: >
-    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites. It covers what the API can be used for, how Shutterstock's partners use it, and how it provides licensed images.
+    This tutorial covers the end-to-end process of searching, licensing, and downloading images with a free API subscription, requiring no credit card or other prerequisites.
     The tutorial includes instructions for Postman, cURL, the Shutterstock CLI, and the Shutterstock JavaScript SDK.
     I researched and wrote all of the content.
 
@@ -60,7 +59,6 @@ entries:
   image: /assets/images/rollback-workflow-crop.png
   description: >
     This video addresses customer confusion that I learned about from support requests.
-    It demonstrates techniques for reversing problems automatically, and it teaches customers about a common misconception about the product at the same time.
     I researched, wrote, and recorded the video.
   followup: >
     Analysis of support calls showed significantly fewer customer issues in this area after I delivered and promoted the video.
