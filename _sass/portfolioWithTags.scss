@@ -46,7 +46,7 @@ section.page__content.portfolioWithTags {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   @include breakpoint($large) {
     flex-direction: column;
     justify-content: start;
@@ -62,6 +62,7 @@ section.page__content.portfolioWithTags {
   background: gray;
   border-radius: 8px;
   border-bottom: solid 1px $masthead-link-color;
+  margin-bottom: 10px;
 
   @include breakpoint($large) {
     padding: 5px;
