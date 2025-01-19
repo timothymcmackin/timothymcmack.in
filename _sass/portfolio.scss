@@ -1,27 +1,35 @@
 section.page__content.portfolio {
   @include breakpoint($large) {
     width: 1000px;
-    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
-.portfolio {
+.portfolio .portfolioEntries {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  width: 90%;
+  padding-left: 50px;
 }
 
-.portfolio > div {
-  width: 250px;
-  margin: 20px;
+.portfolio .portfolioEntries > div {
+  width: 225px;
+  margin: 0px 20px 20px 20px;
 }
 
-.portfolio a {
+.portfolioHide {
+  display: none;
+}
+
+.portfolio .portfolioEntries a {
   font-weight: bold;
 }
 
-.portfolio p {
+.portfolio .portfolioEntries p {
   margin-top: 20px;
 
   @include breakpoint($large) { // will convert to a max-width:1024px media query
@@ -30,6 +38,61 @@ section.page__content.portfolio {
   }
 }
 
-.portfolio img {
+.portfolio .portfolioEntries img {
   padding-bottom: 10px;
+}
+
+.portfolio .tagFlex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  @include breakpoint($large) {
+    flex-direction: column;
+    justify-content: start;
+    width: 10%;
+  }
+}
+
+.tagButton {
+  display: list-item;
+  list-style-type: none;
+  padding: 10px;
+  color: white;
+  background: gray;
+  border-radius: 8px;
+  border-bottom: solid 1px $masthead-link-color;
+  margin-bottom: 10px;
+
+  @include breakpoint($large) {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    color: black;
+    background: none;
+  }
+}
+
+.tagButton:hover {
+  color: #fff;
+  background: #0099ff;
+  @include breakpoint($large) {
+    color: inherit;
+    background: inherit;
+  }
+  cursor: pointer;
+}
+
+.page__content a:not(.btn).tagButton:hover {
+  /* Because the default style tries really hard to underline links on hover */
+  text-decoration: none!important;
+}
+
+.tagButton.tagButtonSelected {
+  list-style-type: none;
+  background: #000;
+  @include breakpoint($large) {
+    list-style-type: inherit;
+    background: inherit;
+  }
 }
