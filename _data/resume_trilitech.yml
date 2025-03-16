@@ -4,7 +4,7 @@ roles:
 entries:
 - Updating the developer documentation for the <a href="https://docs.tezos.com" target="_blank">Tezos blockchain</a>, including API and SDK reference, tutorials, and developer-focused tasks.
 - Documenting the <a href="https://docs.etherlink.com" target="_blank">Tezos Etherlink Ethereum compatibility layer</a> and its Solidity kernel.
-- Restructuring and clarifying the documentation for the <a href="https://releases.smartpy.io/0.19.2a3/manual/introduction/overview" target="_blank">SmartPy</a>, JsLIGO, and CameLIGO programming languages.
+- Documenting domain-specific languages based on <a href="https://ligolang.org" target="_blank">OCaml</a>, <a href="https://smartpy.io/" target="_blank">Python</a>, and <a href="https://ligolang.org" target="_blank">JavaScript/TypeScript</a> and writing sample frontend and backend applications in these languages.
 - Documenting the <a href="https://docs.tezos.com/unity" target="_blank">Tezos SDK for Unity</a> video game development tooling.
 
 # - Consolidating documentation sites created by decentralized Tezos-supported companies.

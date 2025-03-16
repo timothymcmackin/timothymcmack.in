@@ -12,7 +12,7 @@ entries:
   result: Development teams included documentation as part of their development processes. Teams started their own documentation workgroups and provided much of their own docs.
 
 - title: Documentation pipeline
-  experience: Developed and maintained a modular documentation container that builds and publishes documentation for technical teams via GitHub Actions. Coded the container, pipeline, deployment code, and tests using Gatsby, GraphQL, React, GitHub Actions, asynchronous JavaScript, and other open-source tools.
+  experience: Developed a modular documentation platform that internal teams use to publish docs.
   result: Onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services. This container reduced the time that teams had to spend on tech doc and allowed me to unify internal docs with tools like a global search.
 
 - title: Internal technical documentation
