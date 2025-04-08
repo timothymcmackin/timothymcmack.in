@@ -3,8 +3,8 @@ roles:
 - 'Senior Technical Writer: 2023-present'
 entries:
 - Updating the developer documentation for the <a href="https://docs.tezos.com" target="_blank">Tezos blockchain</a>, including API and SDK reference, tutorials, and developer-focused tasks.
-- Documenting the <a href="https://docs.etherlink.com" target="_blank">Tezos Etherlink Ethereum compatibility layer</a> and its Solidity kernel.
-- Documenting domain-specific languages based on <a href="https://ligolang.org" target="_blank">OCaml</a>, <a href="https://smartpy.io/" target="_blank">Python</a>, and <a href="https://ligolang.org" target="_blank">JavaScript/TypeScript</a> and writing sample frontend and backend applications in these languages.
+- Documenting the <a href="https://docs.etherlink.com" target="_blank">Tezos Etherlink Ethereum compatibility layer</a> and how to develop and use decentralized Solidity applications on it.
+- Documenting domain-specific programming languages based on <a href="https://ligolang.org" target="_blank">OCaml</a>, <a href="https://smartpy.io/" target="_blank">Python</a>, and <a href="https://ligolang.org" target="_blank">JavaScript/TypeScript</a> and writing sample frontend and backend applications in these languages.
 - Documenting the <a href="https://docs.tezos.com/unity" target="_blank">Tezos SDK for Unity</a> video game development tooling.
 
 # - Consolidating documentation sites created by decentralized Tezos-supported companies.
