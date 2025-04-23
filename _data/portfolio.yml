@@ -1,7 +1,7 @@
 entries:
 
 - title: SmartPy language documentation
-  url: https://smartpy.io/manual/introduction/overview
+  url: https://smartpy.tezos.com/manual/introduction/overview.html
   image: /assets/images/smartpy-example.png
   default: true
   tags:
