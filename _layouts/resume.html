@@ -37,6 +37,26 @@ layout: default
           {% endfor %}
         </div>
 
+        {% comment %} Webflow {% endcomment %}
+        <div class="company heading-indent">{{ site.data.resume_webflow.title }}</div>
+        <ul class="roles">
+          {% for oneRole in site.data.resume_webflow.roles %}
+          <li>{{ oneRole }}</li>
+          {% endfor %}
+        </ul>
+        <div class="experience-grid-fromdata">
+          {% for oneExp in site.data.resume_webflow.entries %}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <div class="experience no-result">
+              {{ oneExp }}
+            </div>
+            {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
+            {% if thecycle == 'odd' %}
+              <div class="no-arrow-spacer"></div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
         {% comment %} TriliTech {% endcomment %}
         <div class="company heading-indent">{{ site.data.resume_trilitech.title }}</div>
         <ul class="roles">

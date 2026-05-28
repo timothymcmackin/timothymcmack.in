@@ -1,6 +1,6 @@
-title: 'TriliTech (Remote): 2023-present'
+title: 'TriliTech (Remote): 2023-2026'
 roles:
-- 'Senior Technical Writer: 2023-present'
+- 'Senior Technical Writer'
 entries:
 - Updating the developer documentation for the <a href="https://docs.tezos.com" target="_blank">Tezos blockchain</a>, including API and SDK reference, tutorials, and developer-focused tasks.
 - Documenting the <a href="https://docs.etherlink.com" target="_blank">Tezos Etherlink Ethereum compatibility layer</a> and how to develop and use decentralized Solidity applications on it.
