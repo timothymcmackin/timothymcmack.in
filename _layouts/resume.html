@@ -46,12 +46,12 @@ layout: default
         </ul>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_webflow.entries %}
-            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% capture thecycle-webflow %}{% cycle 'odd', 'even' %}{% endcapture %}
             <div class="experience no-result">
               {{ oneExp }}
             </div>
             {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
-            {% if thecycle == 'odd' %}
+            {% if thecycle-webflow == 'odd' %}
               <div class="no-arrow-spacer"></div>
             {% endif %}
           {% endfor %}
@@ -66,12 +66,12 @@ layout: default
         </ul>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_trilitech.entries %}
-            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% capture thecycle-trilitech %}{% cycle 'odd', 'even' %}{% endcapture %}
             <div class="experience no-result">
               {{ oneExp }}
             </div>
             {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
-            {% if thecycle == 'odd' %}
+            {% if thecycle-trilitech == 'even' %}
               <div class="no-arrow-spacer"></div>
             {% endif %}
           {% endfor %}
@@ -83,12 +83,12 @@ layout: default
         <div class="experience-no-role-spacer"></div>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_contracting.entries %}
-            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% capture thecycle-contracting %}{% cycle 'odd', 'even' %}{% endcapture %}
             <div class="experience no-result">
               {{ oneExp }}
             </div>
             {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
-            {% if thecycle == 'odd' %}
+            {% if thecycle-contracting == 'odd' %}
               <div class="no-arrow-spacer"></div>
             {% endif %}
           {% endfor %}
@@ -132,12 +132,12 @@ layout: default
         </ul>
         <div class="experience-grid-fromdata">
           {% for oneExp in site.data.resume_ibm.entries %}
-            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            {% capture thecycle-ibm %}{% cycle 'odd', 'even' %}{% endcapture %}
             <div class="experience no-result">
               {{ oneExp }}
             </div>
             {% comment %} Had trouble with the modulo filter to get odd/even rows. This works, though. {% endcomment %}
-            {% if thecycle == 'odd' %}
+            {% if thecycle-ibm == 'even' %}
               <div class="no-arrow-spacer"></div>
             {% endif %}
           {% endfor %}
