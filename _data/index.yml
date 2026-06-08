@@ -3,7 +3,8 @@ aboutMe:
   bullets:
     - I explain complicated computer systems, tasks, and concepts in plain English.
     - I write code for working example applications and for building and publishing technical documentation.
-    - I lead teams of technical writers.
+    - I document AI features and use AI where it's effective in the long term.
+    # - I lead teams of technical writers and work directly with development teams.
   blocks:
     - >
       Here's my <a href="./resume">resume</a> and my <a href="./portfolio">portfolio</a> and you can get in touch on <a href="https://www.linkedin.com/in/timothymcmackin/" target="_blank">LinkedIn</a> or by <a href="mailto:timothymcmackin@gmail.com" rel="nofollow noopener noreferrer">email</a>.
