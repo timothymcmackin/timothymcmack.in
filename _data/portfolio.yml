@@ -28,6 +28,14 @@ entries:
   followup: >
     This reference information reduced the average API partner integration time from 3 months to 1.2 months.
 
+- title: Webflow MCP server documentation
+  url: https://developers.webflow.com/mcp/reference/overview
+  image: /assets/images/mcp_hero.png\
+  tags: AI/ML
+  description: >
+    I rewrote much of the documentation for Webflow's MCP server and related AI features, including expanding this section on installing the MCP server for various agents and scoping multiple authenticated connections with different permissions.
+    I also started the work of organizing this documentation for consumption into its own documentation MCP server to inform the company's primary MCP server.
+
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
   image: /assets/images/tutorial-ov-crop.png
