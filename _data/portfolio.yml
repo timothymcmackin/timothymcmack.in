@@ -30,7 +30,7 @@ entries:
 
 - title: Webflow MCP server documentation
   url: https://developers.webflow.com/mcp/reference/overview
-  image: /assets/images/mcp_hero.png\
+  image: /assets/images/mcp_hero.png
   tags: AI/ML
   description: >
     I rewrote much of the documentation for Webflow's MCP server and related AI features, including expanding this section on installing the MCP server for various agents and scoping multiple authenticated connections with different permissions.
