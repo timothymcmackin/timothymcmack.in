@@ -4,6 +4,6 @@ roles:
 entries:
 - Led a developer research project and reworked the developer documentation information architecture based on the results.
 - Documented the company's primary MCP server and reworked technical docs to be AI-readable. Used a documentation MCP server to provide information to the primary MCP server, becoming the third most popular tool in the MCP server and increasing the success rate of MCP sessions from 30% to 80%.
-- Documented API updates and AI and non-AI-based features.
+- Documented API updates and AI and non-AI-based features including generating updates to the Webflow Designer API via AI. Adding the Designer API documentation to the MCP server resulted in tripling usage of the API even in its beta phase.
 - Restructured the internal system that publishes documentation, SDKs, and API specs.
 - (Laid off in restructuring after 3 months with the company)
