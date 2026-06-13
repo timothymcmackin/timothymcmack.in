@@ -1,0 +1,30 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  bodyClass?: string;
+  contentClass?: string;
+}
+
+const { title, description, bodyClass, contentClass = '' } = Astro.props;
+---
+
+<Base title={title} description={description} bodyClass={bodyClass}>
+  <div id="main" role="main">
+    <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+      <meta itemprop="headline" content={title} />
+      <div class="page__inner-wrap">
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href={Astro.url} class="u-url" itemprop="url">{title}</a>
+          </h1>
+        </header>
+        <section class={`page__content ${contentClass}`} itemprop="text">
+          <slot />
+        </section>
+      </div>
+    </article>
+  </div>
+</Base>

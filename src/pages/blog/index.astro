@@ -1,0 +1,21 @@
+---
+import SplashLayout from '../../layouts/SplashLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.id.localeCompare(a.id)
+);
+---
+
+<SplashLayout title="Blog" bodyClass="layout--archive">
+  <ul>
+    {posts.map(post => {
+      const slug = post.id.replace(/\.md$/, '');
+      return (
+        <li>
+          <a href={`/blog/${slug}/`}>{post.data.title}</a>
+        </li>
+      );
+    })}
+  </ul>
+</SplashLayout>

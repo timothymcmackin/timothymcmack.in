@@ -1,0 +1,23 @@
+---
+import Base from './Base.astro';
+import AuthorSidebar from '../components/AuthorSidebar.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const { title, description, bodyClass } = Astro.props;
+---
+
+<Base title={title} description={description} bodyClass={bodyClass}>
+  <div id="main" role="main">
+    <AuthorSidebar />
+    <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+      <div class="page__inner-wrap">
+        <slot />
+      </div>
+    </article>
+  </div>
+</Base>

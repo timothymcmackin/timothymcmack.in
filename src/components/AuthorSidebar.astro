@@ -1,0 +1,40 @@
+---
+const links = [
+  { label: 'Mail', icon: 'fas fa-fw fa-envelope', url: 'mailto:timothymcmackin@gmail.com' },
+  { label: 'LinkedIn', icon: 'fab fa-fw fa-linkedin', url: 'https://www.linkedin.com/in/timothymcmackin/' },
+  { label: 'GitHub', icon: 'fab fa-fw fa-github', url: 'https://github.com/timothymcmackin' },
+  { label: 'GitLab', icon: 'fab fa-fw fa-gitlab', url: 'https://gitlab.com/timothymcmackin' },
+  { label: 'YouTube', icon: 'fab fa-fw fa-youtube', url: 'https://www.youtube.com/@timothymcmackin/videos' },
+];
+---
+
+<div class="sidebar sticky">
+  <div itemscope itemtype="https://schema.org/Person" class="h-card">
+    <div class="author__avatar">
+      <a href="/">
+        <img src="/assets/images/bio-photo.jpg" alt="Tim McMackin" itemprop="image" class="u-photo" />
+      </a>
+    </div>
+    <div class="author__content">
+      <h3 class="author__name p-name" itemprop="name">
+        <a class="u-url" rel="me" href="/" itemprop="url">Tim McMackin</a>
+      </h3>
+      <div class="author__bio p-note" itemprop="description">
+        <p>Technical writer, kite-surfer, and kite flier</p>
+      </div>
+    </div>
+    <div class="author__urls-wrapper">
+      <button class="btn btn--inverse">Follow</button>
+      <ul class="author__urls social-icons">
+        {links.map(link => (
+          <li>
+            <a href={link.url} rel="nofollow noopener noreferrer me">
+              <i class={link.icon} aria-hidden="true"></i>
+              <span class="label">{link.label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>

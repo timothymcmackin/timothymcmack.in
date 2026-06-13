@@ -1,0 +1,37 @@
+---
+import SplashLayout from '../../layouts/SplashLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tagMap = new Map<string, typeof posts>();
+
+  for (const post of posts) {
+    for (const tag of post.data.tags ?? []) {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push(post);
+    }
+  }
+
+  return [...tagMap.entries()].map(([tag, tagPosts]) => ({
+    params: { tag },
+    props: { tagPosts },
+  }));
+}
+
+const { tag } = Astro.params;
+const { tagPosts } = Astro.props;
+---
+
+<SplashLayout title={`Posts tagged "${tag}"`} bodyClass="layout--tags">
+  <ul>
+    {tagPosts.map(post => {
+      const slug = post.id.replace(/\.md$/, '');
+      return (
+        <li>
+          <a href={`/blog/${slug}/`}>{post.data.title}</a>
+        </li>
+      );
+    })}
+  </ul>
+</SplashLayout>
