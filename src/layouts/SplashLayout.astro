@@ -21,6 +21,7 @@ const { title, description, bodyClass, contentClass = '' } = Astro.props;
             <a href={Astro.url} class="u-url" itemprop="url">{title}</a>
           </h1>
         </header>
+        <slot name="intro" />
         <section class={`page__content ${contentClass}`} itemprop="text">
           <slot />
         </section>

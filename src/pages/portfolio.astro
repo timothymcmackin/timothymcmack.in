@@ -33,9 +33,10 @@ const allTags = [...new Set(
 ---
 
 <SplashLayout title="Publication samples" contentClass="portfolio" bodyClass="layout--portfolio">
-  <p>Here are some examples of my work in software documentation and technical writing:</p>
-
-  <script src="/assets/js/portfolioTags.js" is:inline></script>
+  <Fragment slot="intro">
+    <p>Here are some examples of my work in software documentation and technical writing:</p>
+    <script src="/assets/js/portfolioTags.js" is:inline></script>
+  </Fragment>
 
   <div class="tagFlex">
     <a class="tagButton" id="showAllButton" status="off" onclick="showEverything()">All tags</a>
