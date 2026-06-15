@@ -66,7 +66,7 @@ const education = loadYaml<EducationData>('resume_education.yml');
     {trilitech.entries.map((entry, i) => (
       <>
         <div class="experience no-result" set:html={entry} />
-        {i % 2 === 1 && <div class="no-arrow-spacer"></div>}
+        {i % 2 === 0 && <div class="no-arrow-spacer"></div>}
       </>
     ))}
   </div>
@@ -113,7 +113,7 @@ const education = loadYaml<EducationData>('resume_education.yml');
     {ibm.entries.map((entry, i) => (
       <>
         <div class="experience no-result" set:html={entry} />
-        {i % 2 === 1 && <div class="no-arrow-spacer"></div>}
+        {i % 2 === 0 && <div class="no-arrow-spacer"></div>}
       </>
     ))}
   </div>
