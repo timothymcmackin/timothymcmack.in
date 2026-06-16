@@ -1,0 +1,21 @@
+---
+import SidebarLayout from '../../layouts/SidebarLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id.replace(/\.md$/, '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<SidebarLayout title={post.data.title} bodyClass="layout--single">
+  <section class="page__content e-content" itemprop="text">
+    <Content />
+  </section>
+</SidebarLayout>

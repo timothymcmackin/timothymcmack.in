@@ -1,0 +1,26 @@
+---
+import SplashLayout from '../../layouts/SplashLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const tagMap = new Map<string, typeof posts>();
+
+for (const post of posts) {
+  for (const tag of post.data.tags ?? []) {
+    if (!tagMap.has(tag)) tagMap.set(tag, []);
+    tagMap.get(tag)!.push(post);
+  }
+}
+
+const tags = [...tagMap.keys()].sort();
+---
+
+<SplashLayout title="Tags" bodyClass="layout--tags">
+  <ul>
+    {tags.map(tag => (
+      <li>
+        <a href={`/tags/${tag}/`}>{tag}</a> ({tagMap.get(tag)!.length})
+      </li>
+    ))}
+  </ul>
+</SplashLayout>

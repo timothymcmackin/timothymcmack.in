@@ -1,0 +1,48 @@
+---
+import SidebarLayout from '../layouts/SidebarLayout.astro';
+import yaml from 'js-yaml';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+interface IndexData {
+  aboutMe: {
+    headText: string;
+    bullets?: string[];
+    text?: string;
+    blocks?: string[];
+  };
+}
+
+const indexData = yaml.load(
+  readFileSync(join(process.cwd(), 'src/data/index.yml'), 'utf8')
+) as IndexData;
+
+const { aboutMe } = indexData;
+---
+
+<SidebarLayout bodyClass="layout--index" description="Tim McMackin is a technical writer specializing in developer documentation, APIs, SDKs, and AI tools.">
+  <section class="page__content e-content index" itemprop="text">
+    <div class="aboutMe">
+      <div>
+        <p>{aboutMe.headText}</p>
+        {aboutMe.bullets && (
+          <ul>
+            {aboutMe.bullets.map(bullet => <li>{bullet}</li>)}
+          </ul>
+        )}
+        {aboutMe.text && <p>{aboutMe.text}</p>}
+      </div>
+      <div>
+        {aboutMe.blocks && aboutMe.blocks.map(block => (
+          <p set:html={block} />
+        ))}
+      </div>
+      <div>
+        <figure>
+          <img class="indexImage" src="/assets/images/IMG_8675_50pct.jpg" alt="A picture of me kite-foiling" />
+          <figcaption>Kite-surfing in the Outer Banks, May 2023. This picture makes me feel good about myself. :-D</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</SidebarLayout>
