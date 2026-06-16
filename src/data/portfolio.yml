@@ -3,6 +3,7 @@ entries:
 - title: SmartPy language documentation
   url: https://smartpy.tezos.com/manual/introduction/overview.html
   image: /assets/images/smartpy-example.png
+  alt: Screenshot of the SmartPy language reference showing Python-style smart contract code examples
   default: true
   tags:
     - Blockchain
@@ -16,6 +17,7 @@ entries:
 - title: Shutterstock API, SDK, and CLI reference
   url: https://api-reference.shutterstock.com/
   image: /assets/images/ai-search-crop.png
+  alt: Screenshot of the Shutterstock API reference showing AI-powered image search endpoints
   default: true
   tags:
     - AI/ML
@@ -31,6 +33,7 @@ entries:
 - title: Webflow MCP server documentation
   url: https://developers.webflow.com/mcp/reference/overview
   image: /assets/images/mcp_hero.png
+  alt: Screenshot of the Webflow MCP server documentation overview page
   tags: AI/ML
   description: >
     I rewrote much of the documentation for Webflow's MCP server and related AI features, including expanding this section on installing the MCP server for various agents and scoping multiple authenticated connections with different permissions.
@@ -39,6 +42,7 @@ entries:
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
   image: /assets/images/tutorial-ov-crop.png
+  alt: Screenshot of the tutorial overview listing Postman, cURL, CLI, and SDK instruction paths
   default: true
   tags:
     - Tutorials
@@ -53,6 +57,7 @@ entries:
 - title: Documentation for the Tezos SDK for Unity
   url: https://docs.tezos.com/unity
   image: /assets/images/unity-sdk-crop.png
+  alt: Screenshot of the Tezos Unity SDK documentation showing the quickstart guide
   default: true
   tags:
     - Tutorials
@@ -68,6 +73,7 @@ entries:
 - title: Shutterstock developer portal documentation
   url: https://www.shutterstock.com/developers/documentation
   image: /assets/images/dev-portal-downloading-crop.png
+  alt: Screenshot of the Shutterstock developer portal showing image download documentation
   tags:
     - SDKs
     - APIs
@@ -80,6 +86,7 @@ entries:
 - title: "Tutorial: Using the computer vision features of the Shutterstock API"
   url: https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial
   image: /assets/images/ai-tutorial-birds-crop.png
+  alt: Screenshot of the computer vision tutorial showing bird images being analyzed with keyword suggestions
   tags:
     - AI/ML
     - Tutorials
@@ -94,6 +101,7 @@ entries:
 - title: Performance characteristics of IBM UrbanCode Deploy
   url: https://www.dropbox.com/s/nc5lkmgtkrvbcpi/UCDPerformanceCharacteristics.pdf?dl=0
   image: /assets/images/performance-graphs.png
+  alt: Charts and graphs from the IBM UrbanCode Deploy performance white paper
   default: true
   # tags:
     # - White papers
@@ -105,6 +113,7 @@ entries:
 - title: Rollback scenarios in IBM UrbanCode Deploy
   url: https://www.youtube.com/watch?v=AG_7ulQMZ0M
   image: /assets/images/rollback-workflow-crop.png
+  alt: Diagram of rollback workflow scenarios from the IBM UrbanCode Deploy video
   default: true
   tags:
     - Videos
@@ -121,6 +130,7 @@ entries:
 - title: Creating and updating full-stack cloud environments with IBM UrbanCode Deploy
   url: https://youtu.be/gHVUpLG7Im4
   image: /assets/images/full-stack-cloud-framegrab.png
+  alt: Video frame showing a cloud infrastructure diagram from the IBM UrbanCode Deploy demo
   tags:
     - Videos
     # - CI/CD

@@ -21,7 +21,7 @@ const resetToDefaults = () => {
   const portfolioElements = document.getElementsByClassName("portfolioEntry");
   for (let i = 0; i < portfolioElements.length; i++) {
     const oneElement = portfolioElements[i];
-    if (oneElement.getAttribute("default") === "true") {
+    if (oneElement.getAttribute("data-default") === "true") {
       oneElement.classList.remove("portfolioHide");
     } else {
       oneElement.classList.add("portfolioHide");
@@ -33,10 +33,10 @@ const resetToDefaults = () => {
   for (let i = 0; i < tagButtons.length; i++) {
     const oneTagButton = tagButtons[i];
     if (oneTagButton.id === "showDefaultButton") {
-      oneTagButton.setAttribute("status", "on");
+      oneTagButton.setAttribute("data-status", "on");
       oneTagButton.classList.add("tagButtonSelected");
     } else {
-      oneTagButton.setAttribute("status", "off");
+      oneTagButton.setAttribute("data-status", "off");
       oneTagButton.classList.remove("tagButtonSelected");
     }
   }
@@ -44,7 +44,7 @@ const resetToDefaults = () => {
 
 const showEverything = () => {
   const showAllButton = document.getElementById("showAllButton");
-  const currentStatus = showAllButton.getAttribute("status");
+  const currentStatus = showAllButton.getAttribute("data-status");
 
   // Deselect all other tag buttons
   enabledTags = [];
@@ -58,7 +58,7 @@ const showEverything = () => {
 
   if (currentStatus === "on") {
     // If on, reset to defaults
-    showAllButton.setAttribute("status", "off");
+    showAllButton.setAttribute("data-status", "off");
     showAllButton.classList.remove("tagButtonSelected");
     resetToDefaults();
   } else {
@@ -68,7 +68,7 @@ const showEverything = () => {
       const oneElement = portfolioElements[i];
       oneElement.classList.remove("portfolioHide");
     }
-    showAllButton.setAttribute("status", "on");
+    showAllButton.setAttribute("data-status", "on");
     showAllButton.classList.add("tagButtonSelected");
   }
 }
@@ -85,7 +85,7 @@ const updateTags = () => {
     // Else, show items for the selected tags
     for (let i = 0; i < portfolioElements.length; i++) {
       const oneElement = portfolioElements[i];
-      const tags = oneElement.getAttribute("tags").split(',');
+      const tags = oneElement.getAttribute("data-tags").split(',');
       const shouldBeEnabled = tags.reduce((isMatched, oneTag) =>
         isMatched || enabledTags.includes(oneTag)
         , false);
@@ -101,7 +101,7 @@ const updateTags = () => {
   const tagButtons = document.getElementsByClassName("tagButton");
   for (let i = 0; i < tagButtons.length; i++) {
     const oneTagButton = tagButtons[i];
-    const tagName = oneTagButton.getAttribute("tagName");
+    const tagName = oneTagButton.getAttribute("data-tag-name");
     if (enabledTags.includes(tagName)) {
       oneTagButton.classList.add("tagButtonSelected");
     } else {

@@ -8,6 +8,7 @@ interface PortfolioEntry {
   title: string;
   url: string;
   image: string;
+  alt?: string;
   default?: boolean;
   tags?: string | string[];
   description?: string;
@@ -32,17 +33,17 @@ const allTags = [...new Set(
 )].sort();
 ---
 
-<SplashLayout title="Publication samples" contentClass="portfolio" bodyClass="layout--portfolio">
+<SplashLayout title="Publication samples" contentClass="portfolio" bodyClass="layout--portfolio" description="Samples of Tim McMackin's technical writing work, including API references, tutorials, videos, and white papers.">
   <Fragment slot="intro">
     <p>Here are some examples of my work in software documentation and technical writing:</p>
     <script src="/assets/js/portfolioTags.js" is:inline></script>
   </Fragment>
 
   <div class="tagFlex">
-    <a class="tagButton" id="showAllButton" status="off" onclick="showEverything()">All tags</a>
-    <a class="tagButton tagButtonSelected" id="showDefaultButton" status="on" onclick="resetToDefaults()">Top 6</a>
+    <a class="tagButton" id="showAllButton" data-status="off" onclick="showEverything()">All tags</a>
+    <a class="tagButton tagButtonSelected" id="showDefaultButton" data-status="on" onclick="resetToDefaults()">Top 6</a>
     {allTags.map(tag => (
-      <a class="tagButton" onclick={`toggleTag('${tag}')`} tagName={tag}>{tag}</a>
+      <a class="tagButton" onclick={`toggleTag('${tag}')`} data-tag-name={tag}>{tag}</a>
     ))}
   </div>
 
@@ -53,11 +54,11 @@ const allTags = [...new Set(
       return (
         <div
           class={entryClass}
-          tags={tagList.join(',')}
-          default={entry.default ? 'true' : 'false'}
+          data-tags={tagList.join(',')}
+          data-default={entry.default ? 'true' : 'false'}
         >
           <a href={entry.url} target="_blank">
-            <img src={entry.image} alt="" />
+            <img src={entry.image} alt={entry.alt ?? ''} />
             {entry.title}
           </a>
           {entry.description && <p set:html={entry.description} />}
