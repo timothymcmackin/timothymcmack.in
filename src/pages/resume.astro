@@ -163,7 +163,7 @@ const education = loadYaml<EducationData>('resume_education.yml');
 
   {/* Education */}
   <div class="company heading-indent">{education.title}</div>
-  <ul class="roles">
+  <ul class="education-list">
     {education.entries.map(edu => (
       <li>{edu.degree}: {edu.school}, {edu.city}</li>
     ))}
