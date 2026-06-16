@@ -2,7 +2,6 @@
 node_modules/
 dist/
 .astro/
-package-lock.json
 
 
 # Local files I'm keeping around from Jekyll for now
