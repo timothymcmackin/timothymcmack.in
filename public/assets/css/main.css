@@ -808,11 +808,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .spacer-result { font-size: smaller; font-weight: bold; height: 0px; visibility: hidden; }
 @media (min-width: 48em) { .spacer-result { height: unset; } }
 
-/* resume-bars design (draft) — remove this block and delete resume-bars.astro when done */
-.bar-spacer { width: 20px; }
-.experience-grid-bars .result-text { border-left: 3px solid #2f7d95; padding-left: 12px; margin-top: 8px; }
-@media (min-width: 48em) { .experience-grid-bars .result-text { border-left: 3px solid #2f7d95; padding-left: 16px; margin-top: 0; } }
-/* end resume-bars design */
 
 .callout-entry { margin-bottom: 20px; }
 .result-callout { position: relative; margin-left: 1.5em; margin-top: 6px; padding: 8px 14px; background-color: rgba(47, 125, 149, 0.07); border-left: 3px solid #2f7d95; }
