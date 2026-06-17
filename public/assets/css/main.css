@@ -790,8 +790,6 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .experience-grid-fromdata > div.spacer-row { flex-basis: 100%; height: 20px; }
 
-@media (min-width: 48em) { .experience-grid-fromdata .result { margin: inherit; } }
-
 .company { font-weight: bold; }
 
 .exp-title { font-size: smaller; font-weight: bold; }
@@ -807,8 +805,18 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 
 .no-arrow-spacer { width: 62px; }
 
-.spacer-result { font-size: smaller; font-weight: bold; height: 0px; }
+.spacer-result { font-size: smaller; font-weight: bold; height: 0px; visibility: hidden; }
 @media (min-width: 48em) { .spacer-result { height: unset; } }
+
+/* resume-bars design (draft) — remove this block and delete resume-bars.astro when done */
+.bar-spacer { width: 20px; }
+.experience-grid-bars .result-text { border-left: 3px solid #2f7d95; padding-left: 12px; margin-top: 8px; }
+@media (min-width: 48em) { .experience-grid-bars .result-text { border-left: 3px solid #2f7d95; padding-left: 16px; margin-top: 0; } }
+/* end resume-bars design */
+
+.callout-entry { margin-bottom: 20px; }
+.result-callout { position: relative; margin-left: 1.5em; margin-top: 6px; padding: 8px 14px; background-color: rgba(47, 125, 149, 0.07); border-left: 3px solid #2f7d95; }
+.result-callout::before { content: '\21B3'; position: absolute; left: -1.4em; top: 0.05em; color: #2f7d95; }
 
 .roles { padding-left: 0px; }
 

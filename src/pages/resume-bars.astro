@@ -49,23 +49,36 @@ const education = loadYaml<EducationData>('resume_education.yml');
       {webflow.roles.map(role => <li>{role}</li>)}
     </ul>
   )}
-  <div>
+  <div class="experience-grid-fromdata experience-grid-bars">
     {webflow.entries.map(entry => {
       if (typeof entry === 'string') {
-        return <div class="callout-entry" set:html={entry} />;
+        return <div class="experience no-result" style="flex-basis:100%" set:html={entry} />;
+      }
+      if (entry.result) {
+        return (
+          <>
+            <div class="experience">
+              {entry.title && <div class="exp-title">{entry.title}</div>}
+              <Fragment set:html={entry.experience} />
+            </div>
+            <div class="bar-spacer"></div>
+            <div class="result">
+              {entry.title && <div class="spacer-result">&nbsp;</div>}
+              <div class="result-text"><Fragment set:html={entry.result} /></div>
+            </div>
+            <div class="spacer-row">&nbsp;</div>
+          </>
+        );
       }
       return (
-        <div class="callout-entry">
-          <div class="experience">
+        <>
+          <div class="experience no-result">
             {entry.title && <div class="exp-title">{entry.title}</div>}
             <Fragment set:html={entry.experience} />
           </div>
-          {entry.result && (
-            <div class="result-callout">
-              <Fragment set:html={entry.result} />
-            </div>
-          )}
-        </div>
+          <div class="no-arrow-spacer"></div>
+          <div class="spacer-row">&nbsp;</div>
+        </>
       );
     })}
   </div>
@@ -93,19 +106,24 @@ const education = loadYaml<EducationData>('resume_education.yml');
       {sstk.roles.map(role => <li>{role}</li>)}
     </ul>
   )}
-  <div>
+  <div class="experience-grid-fromdata experience-grid-bars">
     {sstk.entries.map(entry => (
-      <div class="callout-entry">
+      <>
         <div class="experience">
           {entry.title && <div class="exp-title">{entry.title}</div>}
           <Fragment set:html={entry.experience} />
         </div>
-        {entry.result && (
-          <div class="result-callout">
-            <Fragment set:html={entry.result} />
-          </div>
-        )}
-      </div>
+        <div class="bar-spacer"></div>
+        <div class="result">
+          {entry.result && (
+            <>
+              {entry.title && <div class="spacer-result">&nbsp;</div>}
+              <div class="result-text"><Fragment set:html={entry.result} /></div>
+            </>
+          )}
+        </div>
+        <div class="spacer-row">&nbsp;</div>
+      </>
     ))}
   </div>
 
