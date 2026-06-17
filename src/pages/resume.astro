@@ -49,51 +49,23 @@ const education = loadYaml<EducationData>('resume_education.yml');
       {webflow.roles.map(role => <li>{role}</li>)}
     </ul>
   )}
-  {/*
-    Each row in experience-grid-fromdata is a flex row with three columns:
-      [experience (44%)] [arrow or spacer (62px)] [result (44%)]
-    followed by a spacer-row (100% width) that creates vertical spacing between rows.
-
-    Three cases:
-    1. Plain string: rendered full-width, no columns.
-    2. Object with result: experience + arrow pointing right/down + result.
-    3. Object without result: experience + no-arrow-spacer (holds column width) + empty result column.
-       The no-arrow-spacer keeps the experience column the same width as rows that do have arrows,
-       so content aligns across all rows.
-  */}
-  <div class="experience-grid-fromdata">
+  <div>
     {webflow.entries.map(entry => {
       if (typeof entry === 'string') {
-        return <div class="experience no-result" style="flex-basis:100%" set:html={entry} />;
-      }
-      if (entry.result) {
-        return (
-          <>
-            <div class="experience">
-              {entry.title && <div class="exp-title">{entry.title}</div>}
-              <Fragment set:html={entry.experience} />
-            </div>
-            <div class="arrow-spacer">
-              <span class="arrow is-triangle arrow-bar is-right large-breakpoints"></span>
-              <span class="arrow is-triangle arrow-bar is-bottom small-breakpoints"></span>
-            </div>
-            <div class="result">
-              <div class="spacer-result">&nbsp;</div>
-              <Fragment set:html={entry.result} />
-            </div>
-            <div class="spacer-row">&nbsp;</div>
-          </>
-        );
+        return <div class="callout-entry" set:html={entry} />;
       }
       return (
-        <>
-          <div class="experience no-result">
+        <div class="callout-entry">
+          <div class="experience">
             {entry.title && <div class="exp-title">{entry.title}</div>}
             <Fragment set:html={entry.experience} />
           </div>
-          <div class="no-arrow-spacer"></div>
-          <div class="spacer-row">&nbsp;</div>
-        </>
+          {entry.result && (
+            <div class="result-callout">
+              <Fragment set:html={entry.result} />
+            </div>
+          )}
+        </div>
       );
     })}
   </div>
@@ -121,27 +93,19 @@ const education = loadYaml<EducationData>('resume_education.yml');
       {sstk.roles.map(role => <li>{role}</li>)}
     </ul>
   )}
-  <div class="experience-grid-fromdata">
+  <div>
     {sstk.entries.map(entry => (
-      <>
+      <div class="callout-entry">
         <div class="experience">
           {entry.title && <div class="exp-title">{entry.title}</div>}
           <Fragment set:html={entry.experience} />
         </div>
-        <div class="arrow-spacer">
-          <span class="arrow is-triangle arrow-bar is-right large-breakpoints"></span>
-          <span class="arrow is-triangle arrow-bar is-bottom small-breakpoints"></span>
-        </div>
-        <div class="result">
-          {entry.result && (
-            <>
-              <div class="spacer-result">&nbsp;</div>
-              <Fragment set:html={entry.result} />
-            </>
-          )}
-        </div>
-        <div class="spacer-row">&nbsp;</div>
-      </>
+        {entry.result && (
+          <div class="result-callout">
+            <Fragment set:html={entry.result} />
+          </div>
+        )}
+      </div>
     ))}
   </div>
 
