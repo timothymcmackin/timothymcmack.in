@@ -1,0 +1,25 @@
+---
+const links = [
+  { label: 'Mail', icon: 'fa fa-envelope', url: 'mailto:timothymcmackin@gmail.com' },
+  { label: 'LinkedIn', icon: 'fab fa-fw fa-linkedin', url: 'https://www.linkedin.com/in/timothymcmackin/' },
+  { label: 'GitHub', icon: 'fab fa-fw fa-github', url: 'https://github.com/timothymcmackin' },
+  { label: 'GitLab', icon: 'fab fa-fw fa-gitlab', url: 'https://gitlab.com/timothymcmackin' },
+  { label: 'YouTube', icon: 'fab fa-fw fa-youtube', url: 'https://www.youtube.com/@timothymcmackin/videos' },
+];
+---
+
+<div id="footer" class="page__footer">
+  <footer>
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        {links.map(link => (
+          <li>
+            <a href={link.url} rel="nofollow noopener noreferrer">
+              <i class={link.icon} aria-hidden="true"></i> {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </footer>
+</div>

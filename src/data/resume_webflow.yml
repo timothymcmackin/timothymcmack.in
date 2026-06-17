@@ -1,0 +1,17 @@
+title: 'Webflow (Remote): Feb 2026 — May 2026 (workforce reduction)'
+roles:
+- 'Staff Technical Writer'
+entries:
+- title: Developer research
+  experience: Led a developer research project and reworked the developer documentation information architecture based on the results.
+
+- title: CI restructuring
+  experience: Restructured the internal system that publishes documentation, SDKs, and API specs.
+
+- title: MCP server and documentation server
+  experience: Documented the company's primary MCP server and reworked technical docs to be AI-readable. Used a documentation MCP server to provide information to the primary MCP server
+  result: The documentation MCP server became the third most popular MCP increased the success rate of MCP sessions from 30% to 80%.
+
+- title: Docs for AI and non-AI features
+  experience: Documented API updates and AI and non-AI-based features including generating updates to the Webflow Designer API via AI.
+  result: Usage of beta features of the Designer API tripled.

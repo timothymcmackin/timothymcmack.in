@@ -1,0 +1,67 @@
+---
+import Masthead from '../components/Masthead.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  title,
+  description = 'Tim McMackin, personal web site, resume, and portfolio',
+  bodyClass = '',
+} = Astro.props;
+
+const pageTitle = title ? `${title} | Tim McMackin` : 'Tim McMackin';
+---
+
+<!doctype html>
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Tim McMackin" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Tim McMackin" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <link rel="canonical" href={Astro.url} />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"
+      />
+    </noscript>
+    <script is:inline>
+      document.documentElement.className =
+        document.documentElement.className.replace(/\bno-js\b/, '') + ' js ';
+    </script>
+  </head>
+  <body class={bodyClass}>
+    <nav class="skip-links" aria-label="Skip links">
+      <ul>
+        <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+        <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+        <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+      </ul>
+    </nav>
+    <Masthead />
+    <div class="initial-content">
+      <slot />
+    </div>
+    <Footer />
+    <script src="/assets/js/main.min.js" is:inline></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+---
+import SplashLayout from '../layouts/SplashLayout.astro';
+import yaml from 'js-yaml';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+interface PortfolioEntry {
+  title: string;
+  url: string;
+  image: string;
+  alt?: string;
+  default?: boolean;
+  tags?: string | string[];
+  description?: string;
+  followup?: string;
+}
+
+interface PortfolioData {
+  entries: PortfolioEntry[];
+}
+
+const portfolioData = yaml.load(
+  readFileSync(join(process.cwd(), 'src/data/portfolio.yml'), 'utf8')
+) as PortfolioData;
+
+const entries = portfolioData.entries;
+
+const allTags = [...new Set(
+  entries.flatMap(e => {
+    if (!e.tags) return [];
+    return Array.isArray(e.tags) ? e.tags : [e.tags];
+  })
+)].sort();
+---
+
+<SplashLayout title="Publication samples" contentClass="portfolio" bodyClass="layout--portfolio" description="Samples of Tim McMackin's technical writing work, including API references, tutorials, videos, and white papers.">
+  <Fragment slot="intro">
+    <p>Here are some examples of my work in software documentation and technical writing:</p>
+    <script src="/assets/js/portfolioTags.js" is:inline></script>
+  </Fragment>
+
+  <div class="tagFlex">
+    <a class="tagButton" id="showAllButton" data-status="off" onclick="showEverything()">All tags</a>
+    <a class="tagButton tagButtonSelected" id="showDefaultButton" data-status="on" onclick="resetToDefaults()">Top 6</a>
+    {allTags.map(tag => (
+      <a class="tagButton" onclick={`toggleTag('${tag}')`} data-tag-name={tag}>{tag}</a>
+    ))}
+  </div>
+
+  <div class="portfolioEntries">
+    {entries.map(entry => {
+      const tagList = Array.isArray(entry.tags) ? entry.tags : (entry.tags ? [entry.tags] : []);
+      const entryClass = entry.default ? 'portfolioEntry' : 'portfolioEntry portfolioHide';
+      return (
+        <div
+          class={entryClass}
+          data-tags={tagList.join(',')}
+          data-default={entry.default ? 'true' : 'false'}
+        >
+          <a href={entry.url} target="_blank">
+            <img src={entry.image} alt={entry.alt ?? ''} />
+            {entry.title}
+          </a>
+          {entry.description && <p set:html={entry.description} />}
+          {entry.followup && <p set:html={entry.followup} />}
+        </div>
+      );
+    })}
+  </div>
+</SplashLayout>
