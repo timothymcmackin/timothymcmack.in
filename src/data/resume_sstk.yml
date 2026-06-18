@@ -5,7 +5,7 @@ roles:
 entries:
 - title: Developer documentation
   experience: Developed and wrote <a href="https://api-reference.shutterstock.com" target="_blank">documentation for Shutterstock's public API</a>, SDK, CLI, UI widgets, and <a href="https://tech.shutterstock.com/2020/07/13/computer-vision-tutorial" target="_blank">AI tools</a> by creating a pipeline to merge OpenAPI spec files with manually written examples and task-oriented content.
-  result: These docs reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicates that documentation is a major factor in getting integrations working quickly.
+  result: These docs reduced average partner integration time from 3 months to 1.2 months. Partner feedback indicated that documentation was a major factor in getting integrations working quickly.
 
 - title: Technical documentation leadership
   experience: Drove a culture of information sharing and introduced technical documentation processes as Shutterstock's first technical writer. Hosted writing classes and working sessions to educate development teams about technical docs.
@@ -13,7 +13,7 @@ entries:
 
 - title: Documentation pipeline
   experience: Developed a modular documentation platform that internal teams use to publish docs.
-  result: Onboarded documentation for 5 internal services onto this system in 2 months and eventually 13 services. This container reduced the time that teams had to spend on tech doc and allowed me to unify internal docs with tools like a global search.
+  result: Onboarded documentation for 5 internal services in 2 months and eventually 13 services. This system reduced the time that teams had to spend on tech doc and allowed me to unify internal docs with tools like a global search.
 
 - title: Internal technical documentation
   experience: Documented internal Node.JS microservices and APIs to promote innersourcing and accelerate onboarding.
