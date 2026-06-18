@@ -10,7 +10,7 @@ entries:
 
 - title: MCP server and documentation server
   experience: Documented the company's primary MCP server and reworked technical docs to be AI-readable. Used a documentation MCP server to provide information to the primary MCP server
-  result: The documentation MCP server became the third most popular MCP increased the success rate of MCP sessions from 30% to 80%.
+  result: The documentation MCP server became the third most popular MCP tool and increased the success rate of MCP sessions from 30% to 80%.
 
 - title: Docs for AI and non-AI features
   experience: Documented API updates and AI and non-AI-based features including generating updates to the Webflow Designer API via AI.
