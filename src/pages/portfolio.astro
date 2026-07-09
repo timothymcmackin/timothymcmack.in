@@ -41,7 +41,7 @@ const allTags = [...new Set(
 
   <div class="tagFlex">
     <a class="tagButton" id="showAllButton" data-status="off" onclick="showEverything()">All tags</a>
-    <a class="tagButton tagButtonSelected" id="showDefaultButton" data-status="on" onclick="resetToDefaults()">Top 6</a>
+    <a class="tagButton tagButtonSelected" id="showDefaultButton" data-status="on" onclick="resetToDefaults()">Featured</a>
     {allTags.map(tag => (
       <a class="tagButton" onclick={`toggleTag('${tag}')`} data-tag-name={tag}>{tag}</a>
     ))}
