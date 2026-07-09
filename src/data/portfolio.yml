@@ -38,6 +38,8 @@ entries:
   description: >
     I rewrote much of the documentation for Webflow's MCP server and related AI features, including expanding this section on installing the MCP server for various agents and scoping multiple authenticated connections with different permissions.
     I also started the work of organizing this documentation for consumption into its own documentation MCP server to inform the company's primary MCP server.
+  followup: >
+    The documentation MCP server increased the success rate of MCP sessions from 30% to 80% and became the third most popular MCP tool.
 
 - title: "Tutorial: Licensing and downloading images with the Shutterstock free API subscription"
   url: https://www.shutterstock.com/developers/documentation/tutorial
