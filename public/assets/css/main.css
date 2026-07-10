@@ -838,7 +838,7 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .portfolio .tagFlex { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-evenly; }
 @media (min-width: 64em) { .portfolio .tagFlex { flex-direction: column; justify-content: start; width: 10%; } }
 
-.tagButton { display: list-item; list-style-type: none; padding: 10px; color: white; background: gray; border-radius: 8px; border-bottom: solid 1px #6f777d; margin-bottom: 10px; }
+.tagButton { display: list-item; list-style-type: none; padding: 10px; color: white; background: gray; border-radius: 8px; border-bottom: solid 1px #6f777d; margin-bottom: 10px; transition: none; }
 @media (min-width: 64em) { .tagButton { padding: 5px; margin-bottom: 5px; border-radius: 0px; color: black; background: none; } }
 
 .tagButton:hover { color: #fff; background: #0099ff; cursor: pointer; }
