@@ -95,13 +95,13 @@
 /* resume / portfolio custom sections */
 :root[data-theme='dark'] .result-callout { background-color: rgba(110, 200, 224, 0.1); border-left-color: #6ec8e0; }
 :root[data-theme='dark'] .result-callout::before { color: #6ec8e0; }
-:root[data-theme='dark'] .tagButton { background: #4a4f53; }
-:root[data-theme='dark'] .tagButton.tagButtonSelected { background: #6ec8e0; color: #1b1d1f; list-style-type: none; }
+:root[data-theme='dark'] .tagButton { background: #2a2d30; color: #d8dadd; border-color: #3a3e42; }
+:root[data-theme='dark'] .tagButton:hover { background: #33383c; color: #eaf6fa; border-color: #6ec8e0; }
+:root[data-theme='dark'] .tagButton.tagButtonSelected { background: #6ec8e0; color: #1b1d1f; border-color: #6ec8e0; box-shadow: 0 1px 3px rgba(110, 200, 224, 0.35); }
+:root[data-theme='dark'] .tagButton.tagButtonSelected:hover { background: #8fd6ea; border-color: #8fd6ea; }
 :root[data-theme='dark'] .arrow::after, :root[data-theme='dark'] .arrow .arrow::after { border-color: #d8dadd; }
 :root[data-theme='dark'] .arrow::before, :root[data-theme='dark'] .arrow .arrow::before { background-color: #d8dadd; }
 
 @media (min-width: 64em) {
   :root[data-theme='dark'] .sidebar h2, :root[data-theme='dark'] .sidebar h3 { color: #d8dadd; }
-  :root[data-theme='dark'] .tagButton { color: #d8dadd; }
-  :root[data-theme='dark'] .tagButton.tagButtonSelected { color: #1b1d1f; }
 }
