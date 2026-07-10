@@ -2,6 +2,7 @@
 import yaml from 'js-yaml';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import ThemeToggle from './ThemeToggle.astro';
 
 const navData = yaml.load(
   readFileSync(join(process.cwd(), 'src/data/navigation.yml'), 'utf8')
@@ -29,5 +30,6 @@ const navItems = navData.main;
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    <ThemeToggle />
   </div>
 </div>

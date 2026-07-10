@@ -20,6 +20,20 @@ const pageTitle = title ? `${title} | Tim McMackin` : 'Tim McMackin';
 <!doctype html>
 <html lang="en" class="no-js" dir="ltr">
   <head>
+    <script is:inline>
+      (function () {
+        var STORAGE_KEY = 'theme-preference';
+        var stored = localStorage.getItem(STORAGE_KEY) || 'light';
+        var theme =
+          stored === 'system'
+            ? window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+            : stored;
+        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-theme-preference', stored);
+      })();
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
@@ -32,6 +46,7 @@ const pageTitle = title ? `${title} | Tim McMackin` : 'Tim McMackin';
     <meta property="og:description" content={description} />
     <link rel="canonical" href={Astro.url} />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/dark-mode.css" />
     <link
       rel="preload"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"
