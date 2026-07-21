@@ -825,7 +825,9 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
 .portfolio .portfolioEntries { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; width: 100%; padding-left: 0; }
 @media (min-width: 64em) { .portfolio .portfolioEntries { width: auto; flex: 1 1 0%; min-width: 0; padding-left: 50px; } }
 
-.portfolio .portfolioEntries > div { width: 225px; margin: 0px 20px 20px 20px; }
+.portfolio .portfolioEntries > div { width: 225px; margin: 0px 20px 20px 20px; opacity: 1; transition: opacity 0.3s ease-in-out; }
+
+.portfolio .portfolioEntries > div.portfolioFading { opacity: 0; pointer-events: none; }
 
 .portfolioHide { display: none; }
 

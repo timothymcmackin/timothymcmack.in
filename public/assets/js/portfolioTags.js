@@ -1,5 +1,34 @@
 let enabledTags = [];
 
+const FADE_MS = 300;
+
+const hideEntry = (el) => {
+  if (el.classList.contains("portfolioHide")) return;
+  el.classList.add("portfolioFading");
+  window.setTimeout(() => {
+    if (el.classList.contains("portfolioFading")) {
+      el.classList.add("portfolioHide");
+    }
+  }, FADE_MS);
+}
+
+const showEntry = (el) => {
+  if (!el.classList.contains("portfolioHide") && !el.classList.contains("portfolioFading")) return;
+  el.classList.remove("portfolioHide");
+  el.classList.add("portfolioFading");
+  // Force a reflow so the opacity:0 state is applied before we transition away from it
+  void el.offsetWidth;
+  el.classList.remove("portfolioFading");
+}
+
+const setEntryVisibility = (el, shouldShow) => {
+  if (shouldShow) {
+    showEntry(el);
+  } else {
+    hideEntry(el);
+  }
+}
+
 const toggleTag = (tagName) => {
   if (enabledTags.includes(tagName)) {
     enabledTags.splice(enabledTags.indexOf(tagName), 1);
@@ -21,11 +50,7 @@ const resetToDefaults = () => {
   const portfolioElements = document.getElementsByClassName("portfolioEntry");
   for (let i = 0; i < portfolioElements.length; i++) {
     const oneElement = portfolioElements[i];
-    if (oneElement.getAttribute("data-default") === "true") {
-      oneElement.classList.remove("portfolioHide");
-    } else {
-      oneElement.classList.add("portfolioHide");
-    }
+    setEntryVisibility(oneElement, oneElement.getAttribute("data-default") === "true");
   }
   // Reset tags
   enabledTags = [];
@@ -65,8 +90,7 @@ const showEverything = () => {
     // If off, turn all entries on
     const portfolioElements = document.getElementsByClassName("portfolioEntry");
     for (let i = 0; i < portfolioElements.length; i++) {
-      const oneElement = portfolioElements[i];
-      oneElement.classList.remove("portfolioHide");
+      setEntryVisibility(portfolioElements[i], true);
     }
     showAllButton.setAttribute("data-status", "on");
     showAllButton.classList.add("tagButtonSelected");
@@ -89,11 +113,7 @@ const updateTags = () => {
       const shouldBeEnabled = tags.reduce((isMatched, oneTag) =>
         isMatched || enabledTags.includes(oneTag)
         , false);
-      if (shouldBeEnabled) {
-        oneElement.classList.remove("portfolioHide");
-      } else {
-        oneElement.classList.add("portfolioHide");
-      }
+      setEntryVisibility(oneElement, shouldBeEnabled);
     }
   }
 
