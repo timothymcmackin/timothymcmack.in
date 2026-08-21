@@ -2,11 +2,16 @@ title: 'Webflow (Remote): Feb 2026 — May 2026 (workforce reduction)'
 roles:
 - 'Staff Technical Writer'
 entries:
-- title: Developer research
-  experience: Led a developer research project and reworked the developer documentation information architecture based on the results.
 
-- title: CI restructuring
-  experience: Restructured the internal system that publishes documentation, SDKs, and API specs.
+- title: Developer research and AI docs generation
+  experience: Led a customer research project, redesigned the developer documentation information architecture based on the results, and set up AI generation of the API and SDK documentation based on that plan.
+  result: Developers generated their own documentation quickly and efficiently based on high technical writing standards.
+
+# - title: Developer research
+#   experience: Led a customer research project and redesigned the developer documentation information architecture based on the results.
+
+# - title: Generating docs with AI
+#   experience: Used AI to generate API and SDK documentation based on that information architecture plan.
 
 - title: MCP server and documentation server
   experience: Reworked technical docs to be AI-readable and used a documentation MCP server to provide information to the primary MCP server.
